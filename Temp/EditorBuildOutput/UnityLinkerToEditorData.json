@@ -9,14 +9,26 @@
         "name": "Animation",
         "dependencies": [
           {
+            "name": "AnimationClip",
+            "scenes": [
+              "Assets/Scenes/GamePlayScene.unity"
+            ],
+            "dependencyType": 0,
+            "icon": null
+          },
+          {
             "name": "Animator",
-            "scenes": [],
+            "scenes": [
+              "Assets/Scenes/GamePlayScene.unity"
+            ],
             "dependencyType": 0,
             "icon": null
           },
           {
             "name": "AnimatorController",
-            "scenes": [],
+            "scenes": [
+              "Assets/Scenes/GamePlayScene.unity"
+            ],
             "dependencyType": 1,
             "icon": null
           },
@@ -24,6 +36,12 @@
             "name": "AnimatorOverrideController",
             "scenes": [],
             "dependencyType": 0,
+            "icon": null
+          },
+          {
+            "name": "Motion",
+            "scenes": [],
+            "dependencyType": 1,
             "icon": null
           },
           {
@@ -40,7 +58,8 @@
           {
             "name": "AudioBehaviour",
             "scenes": [
-              "Assets/Scenes/SampleScene.unity"
+              "Assets/Scenes/GamePlayScene.unity",
+              "Assets/Scenes/MainMenu.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -54,7 +73,8 @@
           {
             "name": "AudioListener",
             "scenes": [
-              "Assets/Scenes/SampleScene.unity"
+              "Assets/Scenes/GamePlayScene.unity",
+              "Assets/Scenes/MainMenu.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -91,7 +111,8 @@
           {
             "name": "Camera",
             "scenes": [
-              "Assets/Scenes/SampleScene.unity"
+              "Assets/Scenes/GamePlayScene.unity",
+              "Assets/Scenes/MainMenu.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -129,7 +150,8 @@
           {
             "name": "EditorExtension",
             "scenes": [
-              "Assets/Scenes/SampleScene.unity"
+              "Assets/Scenes/GamePlayScene.unity",
+              "Assets/Scenes/MainMenu.unity"
             ],
             "dependencyType": 1,
             "icon": null
@@ -143,7 +165,8 @@
           {
             "name": "GameObject",
             "scenes": [
-              "Assets/Scenes/SampleScene.unity"
+              "Assets/Scenes/GamePlayScene.unity",
+              "Assets/Scenes/MainMenu.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -169,7 +192,8 @@
           {
             "name": "LevelGameManager",
             "scenes": [
-              "Assets/Scenes/SampleScene.unity"
+              "Assets/Scenes/GamePlayScene.unity",
+              "Assets/Scenes/MainMenu.unity"
             ],
             "dependencyType": 1,
             "icon": null
@@ -195,7 +219,8 @@
           {
             "name": "LightmapSettings",
             "scenes": [
-              "Assets/Scenes/SampleScene.unity"
+              "Assets/Scenes/GamePlayScene.unity",
+              "Assets/Scenes/MainMenu.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -209,7 +234,8 @@
           {
             "name": "Material",
             "scenes": [
-              "Assets/Scenes/SampleScene.unity"
+              "Assets/Scenes/GamePlayScene.unity",
+              "Assets/Scenes/MainMenu.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -235,7 +261,8 @@
           {
             "name": "MonoBehaviour",
             "scenes": [
-              "Assets/Scenes/SampleScene.unity"
+              "Assets/Scenes/GamePlayScene.unity",
+              "Assets/Scenes/MainMenu.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -249,7 +276,8 @@
           {
             "name": "MonoScript",
             "scenes": [
-              "Assets/Scenes/SampleScene.unity"
+              "Assets/Scenes/GamePlayScene.unity",
+              "Assets/Scenes/MainMenu.unity"
             ],
             "dependencyType": 1,
             "icon": null
@@ -257,7 +285,8 @@
           {
             "name": "NamedObject",
             "scenes": [
-              "Assets/Scenes/SampleScene.unity"
+              "Assets/Scenes/GamePlayScene.unity",
+              "Assets/Scenes/MainMenu.unity"
             ],
             "dependencyType": 1,
             "icon": null
@@ -289,7 +318,7 @@
           {
             "name": "RectTransform",
             "scenes": [
-              "Assets/Scenes/SampleScene.unity"
+              "Assets/Scenes/MainMenu.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -303,7 +332,8 @@
           {
             "name": "RenderSettings",
             "scenes": [
-              "Assets/Scenes/SampleScene.unity"
+              "Assets/Scenes/GamePlayScene.unity",
+              "Assets/Scenes/MainMenu.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -316,8 +346,10 @@
           },
           {
             "name": "Renderer",
-            "scenes": [],
-            "dependencyType": 1,
+            "scenes": [
+              "Assets/Scenes/GamePlayScene.unity"
+            ],
+            "dependencyType": 0,
             "icon": null
           },
           {
@@ -335,7 +367,8 @@
           {
             "name": "Shader",
             "scenes": [
-              "Assets/Scenes/SampleScene.unity"
+              "Assets/Scenes/GamePlayScene.unity",
+              "Assets/Scenes/MainMenu.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -355,7 +388,8 @@
           {
             "name": "Sprite",
             "scenes": [
-              "Assets/Scenes/SampleScene.unity"
+              "Assets/Scenes/GamePlayScene.unity",
+              "Assets/Scenes/MainMenu.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -368,7 +402,9 @@
           },
           {
             "name": "SpriteRenderer",
-            "scenes": [],
+            "scenes": [
+              "Assets/Scenes/GamePlayScene.unity"
+            ],
             "dependencyType": 0,
             "icon": null
           },
@@ -387,7 +423,8 @@
           {
             "name": "Texture",
             "scenes": [
-              "Assets/Scenes/SampleScene.unity"
+              "Assets/Scenes/GamePlayScene.unity",
+              "Assets/Scenes/MainMenu.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -395,7 +432,8 @@
           {
             "name": "Texture2D",
             "scenes": [
-              "Assets/Scenes/SampleScene.unity"
+              "Assets/Scenes/GamePlayScene.unity",
+              "Assets/Scenes/MainMenu.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -443,6 +481,12 @@
             "icon": "package/com.unity.modules.audio"
           },
           {
+            "name": "Required by Grid Module",
+            "scenes": [],
+            "dependencyType": 2,
+            "icon": "package/com.unity.modules.grid"
+          },
+          {
             "name": "Required by IMGUI Module",
             "scenes": [],
             "dependencyType": 2,
@@ -465,6 +509,12 @@
             "scenes": [],
             "dependencyType": 2,
             "icon": "package/com.unity.modules.jsonserialize"
+          },
+          {
+            "name": "Required by Physics2D Module",
+            "scenes": [],
+            "dependencyType": 2,
+            "icon": "package/com.unity.modules.physics2d"
           },
           {
             "name": "Required by RuntimeInitializeOnLoadManagerInitializer Module",
@@ -503,6 +553,12 @@
             "icon": "package/com.unity.modules.textrendering"
           },
           {
+            "name": "Required by Tilemap Module",
+            "scenes": [],
+            "dependencyType": 2,
+            "icon": "package/com.unity.modules.tilemap"
+          },
+          {
             "name": "Required by UI Module",
             "scenes": [],
             "dependencyType": 2,
@@ -531,6 +587,31 @@
             "scenes": [],
             "dependencyType": 2,
             "icon": "package/com.unity.modules.webgl"
+          }
+        ]
+      },
+      {
+        "name": "Grid",
+        "dependencies": [
+          {
+            "name": "Grid",
+            "scenes": [
+              "Assets/Scenes/GamePlayScene.unity"
+            ],
+            "dependencyType": 0,
+            "icon": null
+          },
+          {
+            "name": "GridLayout",
+            "scenes": [],
+            "dependencyType": 1,
+            "icon": null
+          },
+          {
+            "name": "Required by Tilemap Module",
+            "scenes": [],
+            "dependencyType": 2,
+            "icon": "package/com.unity.modules.tilemap"
           }
         ]
       },
@@ -597,6 +678,47 @@
         ]
       },
       {
+        "name": "Physics2D",
+        "dependencies": [
+          {
+            "name": "Collider2D",
+            "scenes": [
+              "Assets/Scenes/GamePlayScene.unity"
+            ],
+            "dependencyType": 0,
+            "icon": null
+          },
+          {
+            "name": "CompositeCollider2D",
+            "scenes": [
+              "Assets/Scenes/GamePlayScene.unity"
+            ],
+            "dependencyType": 0,
+            "icon": null
+          },
+          {
+            "name": "Physics2DSettings",
+            "scenes": [],
+            "dependencyType": 1,
+            "icon": null
+          },
+          {
+            "name": "Rigidbody2D",
+            "scenes": [
+              "Assets/Scenes/GamePlayScene.unity"
+            ],
+            "dependencyType": 0,
+            "icon": null
+          },
+          {
+            "name": "Required by Tilemap Module",
+            "scenes": [],
+            "dependencyType": 2,
+            "icon": "package/com.unity.modules.tilemap"
+          }
+        ]
+      },
+      {
         "name": "RuntimeInitializeOnLoadManagerInitializer",
         "dependencies": [
           {
@@ -639,6 +761,12 @@
             "icon": "package/com.unity.modules.core"
           },
           {
+            "name": "Required by Grid Module",
+            "scenes": [],
+            "dependencyType": 2,
+            "icon": "package/com.unity.modules.grid"
+          },
+          {
             "name": "Required by IMGUI Module",
             "scenes": [],
             "dependencyType": 2,
@@ -661,6 +789,12 @@
             "scenes": [],
             "dependencyType": 2,
             "icon": "package/com.unity.modules.jsonserialize"
+          },
+          {
+            "name": "Required by Physics2D Module",
+            "scenes": [],
+            "dependencyType": 2,
+            "icon": "package/com.unity.modules.physics2d"
           },
           {
             "name": "Required by RuntimeInitializeOnLoadManagerInitializer Module",
@@ -697,6 +831,12 @@
             "scenes": [],
             "dependencyType": 2,
             "icon": "package/com.unity.modules.textrendering"
+          },
+          {
+            "name": "Required by Tilemap Module",
+            "scenes": [],
+            "dependencyType": 2,
+            "icon": "package/com.unity.modules.tilemap"
           },
           {
             "name": "Required by UI Module",
@@ -781,7 +921,7 @@
           {
             "name": "Font",
             "scenes": [
-              "Assets/Scenes/SampleScene.unity"
+              "Assets/Scenes/MainMenu.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -819,12 +959,41 @@
         ]
       },
       {
+        "name": "Tilemap",
+        "dependencies": [
+          {
+            "name": "Tilemap",
+            "scenes": [
+              "Assets/Scenes/GamePlayScene.unity"
+            ],
+            "dependencyType": 0,
+            "icon": null
+          },
+          {
+            "name": "TilemapCollider2D",
+            "scenes": [
+              "Assets/Scenes/GamePlayScene.unity"
+            ],
+            "dependencyType": 0,
+            "icon": null
+          },
+          {
+            "name": "TilemapRenderer",
+            "scenes": [
+              "Assets/Scenes/GamePlayScene.unity"
+            ],
+            "dependencyType": 0,
+            "icon": null
+          }
+        ]
+      },
+      {
         "name": "UI",
         "dependencies": [
           {
             "name": "Canvas",
             "scenes": [
-              "Assets/Scenes/SampleScene.unity"
+              "Assets/Scenes/MainMenu.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -838,7 +1007,7 @@
           {
             "name": "CanvasRenderer",
             "scenes": [
-              "Assets/Scenes/SampleScene.unity"
+              "Assets/Scenes/MainMenu.unity"
             ],
             "dependencyType": 0,
             "icon": null

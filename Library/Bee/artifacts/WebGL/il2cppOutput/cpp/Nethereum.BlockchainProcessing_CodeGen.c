@@ -31,13 +31,13 @@ static Il2CppMethodPointer s_methodPointers[7] =
 };
 static const int32_t s_InvokerIndices[7] = 
 {
-	2593,
-	2593,
-	2593,
-	2593,
-	2593,
-	1884,
-	1884,
+	2609,
+	2609,
+	2609,
+	2609,
+	2609,
+	1896,
+	1896,
 };
 IL2CPP_EXTERN_C const Il2CppCodeGenModule g_Nethereum_BlockchainProcessing_CodeGenModule;
 const Il2CppCodeGenModule g_Nethereum_BlockchainProcessing_CodeGenModule = 

@@ -675,6 +675,7 @@ IL2CPP_EXTERN_C RuntimeClass* GameObject_t76FEDD663AB33C991A9C9A2312933765109421
 IL2CPP_EXTERN_C RuntimeClass* HttpProvider_t91BADA19D5209A97C03A1064B8F171A2E7C78E93_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* IContract_t2BF7D3A07866B9B2E7845815B8288BC3FC34060B_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* IDisposable_t030E0496B4E0E4E4F086825007979AF51F7248C5_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* IEciesProvider_tCD2705E3A90867A5BE846FEDF1A2B8A9E00DACFD_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* IEnumerable_1_tEA17B83295B756EFB23F3357537A3AAC9B4D9732_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* IEnumerator_1_t0BDD6AE0DF2AD4775B90EFA2484410A000E14A95_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* IEnumerator_t7B609C2FFA6EB5167D9C62A0C32A21DE2F666DAA_il2cpp_TypeInfo_var;
@@ -699,6 +700,7 @@ IL2CPP_EXTERN_C RuntimeClass* MetaMaskDataManager_t3E18FAC430D3797A31831B2D6F830
 IL2CPP_EXTERN_C RuntimeClass* MetaMaskEthereumRequestFailedEventArgs_tD54DDCF1529430826AE40351B1FE42307D409343_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* MetaMaskEthereumRequestResultEventArgs_t89CF1F3F3D4B2E47FA575502B74879D5F7969A5B_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* MetaMaskEthereumRequest_t005074226FF2735E366576B767686CAC35F6F3F1_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* MetaMaskMessage_t0142395F6D76A2B56EE2EE0B0244489BC5110B5F_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* MetaMaskOriginatorInfo_t7A32FFE9244A9BF70B81382A74E56D3C47A5ABFA_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* MetaMaskRequestInfo_t454CA7456856A84DBA25A01B631A3E7CA85EA56F_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* MetaMaskSessionData_t01165BA10C998A87D81EA70D05DAB63A70DBC0F7_il2cpp_TypeInfo_var;
@@ -807,6 +809,7 @@ IL2CPP_EXTERN_C String_t* _stringLiteral15ABA1A04898BEFC8B3C8918C10803CACA669ECD
 IL2CPP_EXTERN_C String_t* _stringLiteral19CEC6E13D8E5B2867A7B89BBE93EB965A8AED9D;
 IL2CPP_EXTERN_C String_t* _stringLiteral1B610611D3BE45C25E5133155F9D83AF5F3832ED;
 IL2CPP_EXTERN_C String_t* _stringLiteral1CB2C6D08E28F880B447640F17E7614F10795ECA;
+IL2CPP_EXTERN_C String_t* _stringLiteral1D938A683E8B1838039DFDF3DEB7496F9DCC49A5;
 IL2CPP_EXTERN_C String_t* _stringLiteral2388C4C049AD60C667B62CE044416CB1E901DC7D;
 IL2CPP_EXTERN_C String_t* _stringLiteral24AC29217FD73A099AE5DE363C9CB0FA8B881D6F;
 IL2CPP_EXTERN_C String_t* _stringLiteral26CA1D5E2F6785F2DC7432A0B6AD44F0E0349443;
@@ -880,6 +883,7 @@ IL2CPP_EXTERN_C String_t* _stringLiteral9887228F46684A1BEBC48A827ADA302BE3E56559
 IL2CPP_EXTERN_C String_t* _stringLiteral9DDC2FFE2273F0ADCF844651BCAA058558E72794;
 IL2CPP_EXTERN_C String_t* _stringLiteralA0C68CB7DF8C4762E4F24568DBE6E5E40745E362;
 IL2CPP_EXTERN_C String_t* _stringLiteralA1EAE7F48BADA65DDDDA619127F8A9DD6131F2D7;
+IL2CPP_EXTERN_C String_t* _stringLiteralA21C5E9FB24305BBD0D938D52C1CDBDC457035AE;
 IL2CPP_EXTERN_C String_t* _stringLiteralA366FBFC2F5533FB9D604F6A2AB424235805035B;
 IL2CPP_EXTERN_C String_t* _stringLiteralA3C48F920CA03FE8BCEF33375645725C40BA7ADD;
 IL2CPP_EXTERN_C String_t* _stringLiteralA4E04BD5605EF142FE577D641B16B289427627A1;
@@ -1029,6 +1033,7 @@ IL2CPP_EXTERN_C const RuntimeMethod* MetaMaskDataManager_LoadInto_TisMetaMaskSes
 IL2CPP_EXTERN_C const RuntimeMethod* MetaMaskHttpService_CreateHttpService_mC4B66B8B5DF431F7D5CDDC7F79DCCC66B8AE077D_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* MetaMaskMessage_1_get_Message_m00C821AFEAEC737DB48799D152BD4EF5AAF813A4_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* MetaMaskMessage_1_get_Message_mE4ADB398D4C0A38F9D940B61CD033A3C24498A6A_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* MetaMaskSessionData__ctor_m85B95973E39E61EF35122C5232D9C33F2842AC19_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* MetaMaskTypedDataMessage_1_get_Data_m05626AEF7B04EB3214F49DBF093D0E94C6B62F30_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* MetaMaskTypedDataMessage_1_get_Data_m0C23D3B14E98B131F91D0E80B3B715E576E030E5_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* MetaMaskTypedDataMessage_1_get_Data_m3901B1B730B2995B4FC294DE23C0B1B03928FC6A_RuntimeMethod_var;
@@ -1126,14 +1131,12 @@ IL2CPP_EXTERN_C const RuntimeMethod* Object_FindObjectsOfType_TisMetaMaskUnityTr
 IL2CPP_EXTERN_C const RuntimeMethod* Object_FindObjectsOfType_TisMetaMaskUnity_tAD291FAA25E0EABEFB390E5800FC3F6E0827A8FD_mC5DB1D815807AC05F9469CF23E0D14DEF88C64A9_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Object_Instantiate_TisGameObject_t76FEDD663AB33C991A9C9A23129337651094216F_m10D87C6E0708CA912BBB02555BF7D0FBC5D7A2B3_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Queue_1_Clear_m70861E24CF43ECFF3BC5C2AD4EE55963D54D8711_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* Queue_1_Dequeue_m29938B1EEEB8880C5D5330E62EB703CB93D5ADA7_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Queue_1_Dequeue_m86B243DF9EC238316EC3D27DF3E0AB8DB0987E84_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Queue_1_Enqueue_m5CB8CF3906F1289F92036F0973EC5BE3450402EF_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Queue_1_Enqueue_mF4861CE10C2867B6DE0CAFA52A548298BEA78E85_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Queue_1__ctor_m6E2A5A8173E0CC524496D5155C737DF8FD10D0EB_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Queue_1__ctor_m7241AC0625B743DFDBDA7E742510A06FCFC64678_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Queue_1_get_Count_m1768ADA9855B7CDA14C9C42E098A287F1A39C3A2_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* Queue_1_get_Count_m315E61E5AFC3D7C6E9AD0750D6115434ED1FD85C_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Resources_FindObjectsOfTypeAll_TisTransform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1_m56A6F564366266466FB378CA2FE4AE1DB2DB79C3_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Resources_Load_TisMetaMaskConfig_tCAAA3E682DB394D1B34B7B9BA18991A0A7D5A28C_mA72F46297B403CDDCD65539A29EF9370EDD248C1_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Resources_Load_TisMetaMaskUnityUITransport_t6B4F85FA9E78DE6E7E666C1306C8971F82D5A723_m1E68CA8A344851799E5698F7E2949CC4C71FEB48_RuntimeMethod_var;
@@ -1178,7 +1181,6 @@ IL2CPP_EXTERN_C const RuntimeMethod* TokenDisplay_U3CStartU3Eb__3_0_mC32D536D1EC
 IL2CPP_EXTERN_C const RuntimeMethod* U3CAnimateU3Ed__19_System_Collections_IEnumerator_Reset_m1FD15FB08C3724BACD606D56D8D4827EEE1BBCA4_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* U3CFadeBackgroundCanvasGroupU3Ed__24_System_Collections_IEnumerator_Reset_m65B52584D3FAC1ED403F6834EA93AEA3375F712C_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* U3CFadeBackgroundImageU3Ed__25_System_Collections_IEnumerator_Reset_m1F9261A293B8B65E4C95AAF5D543A0F9F99ACD5D_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* U3CProcessQueueU3Ed__8_System_Collections_IEnumerator_Reset_m64B507012D5DFF846DFACEAAB3E4B2E51ECD1960_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* U3CU3Ec_U3CInitializeU3Eb__35_0_m0036B44837548EE804A8457B733465B7A80FF3E9_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* U3CU3Ec_U3CInitializeU3Eb__35_1_m671A45BB238EE7FD7E26DC0C1F050C18A2EDDFC2_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* U3CU3Ec_U3COnDisconnectU3Eb__29_0_mABC31862C4486802DE86A764E4730E86B233C4B8_RuntimeMethod_var;
@@ -5277,6 +5279,19 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void JsonConvert_DeserializeObject_TisIl2CppF
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Singleton_1__ctor_mC067507774D87910F16479D0E3FA6DFED2499829_gshared (Singleton_1_tFD95DFE9C1B22D60B601FB137709699C5D2D4EAA* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_NO_INLINE IL2CPP_METHOD_ATTR void List_1_AddWithResize_mA6DFDBC2B22D6318212C6989A34784BD8303AF33_gshared (List_1_tDBA89B0E21BAC58CFBD3C1F76E4668E3B562761A* __this, Il2CppFullySharedGenericAny ___0_item, const RuntimeMethod* method) ;
 
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2 (RuntimeObject* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaMaskMessage__ctor_m117F2C0544E749DE0FD0136DF223FA630BFC16AE (MetaMaskMessage_t0142395F6D76A2B56EE2EE0B0244489BC5110B5F* __this, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR String_t* MetaMaskSessionData_get_ChannelId_m19F1CF72D62FEB3C8E796003EF4180943E1A7B2F_inline (MetaMaskSessionData_t01165BA10C998A87D81EA70D05DAB63A70DBC0F7* __this, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void MetaMaskMessage_set_Id_m603CCBBCF5CB12CABF7BC54663308CEA55FE88EF_inline (MetaMaskMessage_t0142395F6D76A2B56EE2EE0B0244489BC5110B5F* __this, String_t* ___0_value, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* MetaMaskSession_EncryptMessage_m23D0E289C0EB9D012DBE51E60C6FE67DCB052654 (MetaMaskSession_tB8A8DD42927AB8C19D741EE1E9EBF8356776FDDB* __this, RuntimeObject* ___0_message, String_t* ___1_walletPublicKey, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void MetaMaskMessage_set_Message_m3DFFE203BB2FC73F218B63AD0A7EF4F29AD2DF71_inline (MetaMaskMessage_t0142395F6D76A2B56EE2EE0B0244489BC5110B5F* __this, RuntimeObject* ___0_value, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* JsonConvert_SerializeObject_m277670BD344964CB2A61751E5A3D62DB5B1321C7 (RuntimeObject* ___0_value, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Guid_t Guid_NewGuid_m1F4894E8DC089811D6252148AD5858E58D43A7BD (const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Guid_ToString_m2BFFD5FA726E03FA707AAFCCF065896C46D5290C (Guid_t* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool String_IsNullOrWhiteSpace_m42E1F3B2C358068D645E46F01CF1834DC77A5A10 (String_t* ___0_value, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ArgumentException__ctor_m026938A67AF9D36BB7ED27F80425D7194B514465 (ArgumentException_tAD90411542A20A9C72D5CDA3A84181D8B947A263* __this, String_t* ___0_message, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void MetaMaskSessionData_set_AppName_m3803F4992A6210E8C82C603484156D72B56C9399_inline (MetaMaskSessionData_t01165BA10C998A87D81EA70D05DAB63A70DBC0F7* __this, String_t* ___0_value, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void MetaMaskSessionData_set_AppUrl_m121706A25D2F7F7B0D83D67C6553F3D239BD930F_inline (MetaMaskSessionData_t01165BA10C998A87D81EA70D05DAB63A70DBC0F7* __this, String_t* ___0_value, const RuntimeMethod* method) ;
 inline Task_1_tE31926224A424AEAE794D9D841B463DE8C3889D4* TaskCompletionSource_1_get_Task_mF159D6E7052BFC493AB9668400A86AB69EA7A02D_inline (TaskCompletionSource_1_tD28EAF241843A920D31709EB1DBBD788AD3B622D* __this, const RuntimeMethod* method)
 {
 	return ((  Task_1_tE31926224A424AEAE794D9D841B463DE8C3889D4* (*) (TaskCompletionSource_1_tD28EAF241843A920D31709EB1DBBD788AD3B622D*, const RuntimeMethod*))TaskCompletionSource_1_get_Task_m4994989AA2174905CF517397D0F6B082ADC29EE9_gshared_inline)(__this, method);
@@ -5284,7 +5299,6 @@ inline Task_1_tE31926224A424AEAE794D9D841B463DE8C3889D4* TaskCompletionSource_1_
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Task_get_IsCompleted_m942D6D536545EF059089398B19435591561BB831 (Task_t751C4CC3ECD055BABA8A0B6A5DFBB4283DCA8572* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Delegate_t* Delegate_Combine_m1F725AEF318BE6F0426863490691A6F4606E7D00 (Delegate_t* ___0_a, Delegate_t* ___1_b, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Delegate_t* Delegate_Remove_m8B7DD5661308FA972E23CA1CC3FC9CEB355504E3 (Delegate_t* ___0_source, Delegate_t* ___1_value, const RuntimeMethod* method) ;
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool String_IsNullOrWhiteSpace_m42E1F3B2C358068D645E46F01CF1834DC77A5A10 (String_t* ___0_value, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Convert_ToInt32_mD1B3AFBDA26E52D0382434804364FEF8BA241FB4 (String_t* ___0_value, int32_t ___1_fromBase, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RuntimeObject* MetaMaskDataManager_get_Storage_m0139C07149C3C363B3B0A6B21D9C161534B61EFF_inline (MetaMaskDataManager_t3E18FAC430D3797A31831B2D6F83086D1A1204F8* __this, const RuntimeMethod* method) ;
 inline void Dictionary_2__ctor_m21E39E1E84897A7936A909479CFEC2C8CC1A7C7A (Dictionary_2_tB5EBB77FCCA64A99637F9C10CB82A4E8FC30AEBD* __this, const RuntimeMethod* method)
@@ -5295,11 +5309,9 @@ inline void Queue_1__ctor_m6E2A5A8173E0CC524496D5155C737DF8FD10D0EB (Queue_1_tE9
 {
 	((  void (*) (Queue_1_tE9EF546915795972C3BFD68FBB8FA859D3BAF3B5*, const RuntimeMethod*))Queue_1__ctor_m657BFA58DFD6AB5B1B4B69AA6E963CD569637EAD_gshared)(__this, method);
 }
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2 (RuntimeObject* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaMaskWallet_LoadOrCreateSession_m2F67DBD6C6A7B39EB6E30EF31411AB1F4B47D203 (MetaMaskWallet_t11508BD961FA9B4ED5054AC565127A46856E29E5* __this, String_t* ___0_appName, String_t* ___1_appUrl, RuntimeObject* ___2_eciesProvider, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EventHandler__ctor_m95444CE8D5A6F1AFC9793866C3FE884E732DCEB2 (EventHandler_tC6323FD7E6163F965259C33D72612C0E5B9BAB82* __this, RuntimeObject* ___0_object, intptr_t ___1_method, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR MetaMaskSessionData_t01165BA10C998A87D81EA70D05DAB63A70DBC0F7* MetaMaskSession_get_Data_m475ACEFE88B9D051FDE0CC12EA482DC66B11CCB5_inline (MetaMaskSession_tB8A8DD42927AB8C19D741EE1E9EBF8356776FDDB* __this, const RuntimeMethod* method) ;
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR String_t* MetaMaskSessionData_get_ChannelId_m19F1CF72D62FEB3C8E796003EF4180943E1A7B2F_inline (MetaMaskSessionData_t01165BA10C998A87D81EA70D05DAB63A70DBC0F7* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EventDelegator__ctor_mC33653BDE562647122399715256211339B75D248 (EventDelegator_tB5F4C5773DDA596C78FCBA6BB29B1499CCEA97FC* __this, String_t* ___0_contextString, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR String_t* MetaMaskSessionData_get_AppName_mEB2280B78DB230D629B1692ABE8B23D0BB7712D0_inline (MetaMaskSessionData_t01165BA10C998A87D81EA70D05DAB63A70DBC0F7* __this, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR String_t* MetaMaskSessionData_get_AppUrl_m62A261E6AF034842BEA7DDE0288FB17CA6C236BA_inline (MetaMaskSessionData_t01165BA10C998A87D81EA70D05DAB63A70DBC0F7* __this, const RuntimeMethod* method) ;
@@ -5550,7 +5562,6 @@ inline void TaskCompletionSource_1_SetResult_m01C4A3D30773F666BCC3B709CCE01C35B9
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR String_t* ChainData_get_ChainId_mEE81DE402451C97C8D99547F2A77533353E70E15_inline (ChainData_t2CC0F87F4326A471E839018B25AFC9AFF7F36263* __this, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR EventHandler_tC6323FD7E6163F965259C33D72612C0E5B9BAB82* MetaMaskWallet_get_ChainIdChangedHandler_mE1D4FA26D2CA85FE476A406AC18295DC4A7D8E07_inline (MetaMaskWallet_t11508BD961FA9B4ED5054AC565127A46856E29E5* __this, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void MetaMaskEthereumRequest_set_Id_m5E1E71ECFE8217941A2DED24A211F7BD07EA1313_inline (MetaMaskEthereumRequest_t005074226FF2735E366576B767686CAC35F6F3F1* __this, String_t* ___0_value, const RuntimeMethod* method) ;
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* JsonConvert_SerializeObject_m277670BD344964CB2A61751E5A3D62DB5B1321C7 (RuntimeObject* ___0_value, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool String_IsNullOrEmpty_mEA9E3FB005AC28FE02E69FCF95A7B8456192B478 (String_t* ___0_value, const RuntimeMethod* method) ;
 inline bool List_1_Contains_m359254483BE42CAD4DCA8FBAFB87473FB4CF00E1 (List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD* __this, String_t* ___0_item, const RuntimeMethod* method)
 {
@@ -5571,8 +5582,6 @@ inline void TaskCompletionSource_1__ctor_mECBBD1533E4034A268C1201B53C9A9713B6496
 {
 	((  void (*) (TaskCompletionSource_1_tD28EAF241843A920D31709EB1DBBD788AD3B622D*, const RuntimeMethod*))TaskCompletionSource_1__ctor_mD6DB19F66035FC77675F1ED9FE696A65CF9C0F23_gshared)(__this, method);
 }
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Guid_t Guid_NewGuid_m1F4894E8DC089811D6252148AD5858E58D43A7BD (const RuntimeMethod* method) ;
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Guid_ToString_m2BFFD5FA726E03FA707AAFCCF065896C46D5290C (Guid_t* __this, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void MetaMaskSessionData_set_ChannelId_mEA2073E4D67CEA8304C54F32D41C14C0CB48DC84_inline (MetaMaskSessionData_t01165BA10C998A87D81EA70D05DAB63A70DBC0F7* __this, String_t* ___0_value, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaMaskSocketOptions__ctor_m0BBF18E1E9963F85733D0A2D59FB323669E3899C (MetaMaskSocketOptions_tA782F76DD2E1DC7E8469B38F03E66D5FB2022EFF* __this, const RuntimeMethod* method) ;
 inline void Dictionary_2__ctor_m768E076F1E804CE4959F4E71D3E6A9ADE2F55052 (Dictionary_2_t46B2DB028096FA2B828359E52F37F3105A83AD83* __this, const RuntimeMethod* method)
@@ -5910,7 +5919,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Scene_tA1DC762B79745EB5140F054C884855B9223183
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Scene_get_name_m3C818DFA663E159274DAD823B780C7616C5E2A8C (Scene_tA1DC762B79745EB5140F054C884855B922318356* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* String_ToLower_m6191ABA3DC514ED47C10BDA23FD0DDCEAE7ACFBD (String_t* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool String_op_Inequality_m8C940F3CFC42866709D7CA931B3D77B4BE94BCB6 (String_t* ___0_a, String_t* ___1_b, const RuntimeMethod* method) ;
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ArgumentException__ctor_m026938A67AF9D36BB7ED27F80425D7194B514465 (ArgumentException_tAD90411542A20A9C72D5CDA3A84181D8B947A263* __this, String_t* ___0_message, const RuntimeMethod* method) ;
 inline WebSocketDispatcher_t75C36A4C5BA9421395E161C0B48429C20E9002DB* Object_FindObjectOfType_TisWebSocketDispatcher_t75C36A4C5BA9421395E161C0B48429C20E9002DB_m54F872C27D617478BAB9836A19651F0C0A88E14A (const RuntimeMethod* method)
 {
 	return ((  WebSocketDispatcher_t75C36A4C5BA9421395E161C0B48429C20E9002DB* (*) (const RuntimeMethod*))Object_FindObjectOfType_TisRuntimeObject_m02DFBF011F3B59F777A5E521DB2A116DD496E968_gshared)(method);
@@ -6527,17 +6535,6 @@ inline Task_1_t3D7638C82ED289AF156EDBAE76842D8DF4C4A9E0* TaskCompletionSource_1_
 {
 	return ((  Task_1_t3D7638C82ED289AF156EDBAE76842D8DF4C4A9E0* (*) (TaskCompletionSource_1_tC9FC5C6EACD2138DA270912A14414A2FCA266372*, const RuntimeMethod*))TaskCompletionSource_1_get_Task_m4994989AA2174905CF517397D0F6B082ADC29EE9_gshared_inline)(__this, method);
 }
-inline UnityHttpServiceRequest_tE1C78F3296887B84149AB458B19B187B7B4805E6* Queue_1_Dequeue_m29938B1EEEB8880C5D5330E62EB703CB93D5ADA7 (Queue_1_t79661E1EE1B7A421C0503DE3C7E79C9A9FD4EA53* __this, const RuntimeMethod* method)
-{
-	UnityHttpServiceRequest_tE1C78F3296887B84149AB458B19B187B7B4805E6* il2cppRetVal;
-	((  void (*) (Queue_1_t00794C5F46E3254E713B03F949E6AB3A1AB1FD41*, Il2CppFullySharedGenericAny*, const RuntimeMethod*))Queue_1_Dequeue_m80C152387A53656EC4AEF450BCBA9087DC51EEE3_gshared)((Queue_1_t00794C5F46E3254E713B03F949E6AB3A1AB1FD41*)__this, (Il2CppFullySharedGenericAny*)&il2cppRetVal, method);
-	return il2cppRetVal;
-}
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* MetaMaskHttpService_ProcessRequest_mC4F6C667D4323ECBDBA1EB12C3566E1C4945E076 (MetaMaskHttpService_tB3158F44277665DC7C6DC6C39EF9CB15D2E8E12C* __this, UnityHttpServiceRequest_tE1C78F3296887B84149AB458B19B187B7B4805E6* ___0_request, const RuntimeMethod* method) ;
-inline int32_t Queue_1_get_Count_m315E61E5AFC3D7C6E9AD0750D6115434ED1FD85C_inline (Queue_1_t79661E1EE1B7A421C0503DE3C7E79C9A9FD4EA53* __this, const RuntimeMethod* method)
-{
-	return ((  int32_t (*) (Queue_1_t79661E1EE1B7A421C0503DE3C7E79C9A9FD4EA53*, const RuntimeMethod*))Queue_1_get_Count_mE6103188ACDEC07F90F2D2986554730D18029750_gshared_inline)(__this, method);
-}
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Mathf_Clamp01_mA7E048DBDA832D399A581BE4D6DED9FA44CE0F14_inline (float ___0_value, const RuntimeMethod* method) ;
 inline void List_1_AddWithResize_mA6DFDBC2B22D6318212C6989A34784BD8303AF33 (List_1_tDBA89B0E21BAC58CFBD3C1F76E4668E3B562761A* __this, Il2CppFullySharedGenericAny ___0_item, const RuntimeMethod* method)
 {
@@ -6547,6 +6544,329 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Array_Clear_m50BAA3751899858B097D3FF2ED3
 IL2CPP_EXTERN_C void DEFAULT_CALL OpenMetaMaskDeeplink(char*);
 IL2CPP_EXTERN_C int32_t DEFAULT_CALL WebGLIsMobile();
 IL2CPP_EXTERN_C void DEFAULT_CALL _SendRequestFetch(char*, char*, char*, char*, char*, int32_t, char*, char*);
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR MetaMaskSessionData_t01165BA10C998A87D81EA70D05DAB63A70DBC0F7* MetaMaskSession_get_Data_m475ACEFE88B9D051FDE0CC12EA482DC66B11CCB5 (MetaMaskSession_tB8A8DD42927AB8C19D741EE1E9EBF8356776FDDB* __this, const RuntimeMethod* method) 
+{
+	{
+		MetaMaskSessionData_t01165BA10C998A87D81EA70D05DAB63A70DBC0F7* L_0 = __this->___data;
+		return L_0;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* MetaMaskSession_get_EciesProvider_m0CC99A0A0FE5B8EF1241AF26F2C7BACA379F50FE (MetaMaskSession_tB8A8DD42927AB8C19D741EE1E9EBF8356776FDDB* __this, const RuntimeMethod* method) 
+{
+	{
+		RuntimeObject* L_0 = __this->___ecies;
+		return L_0;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* MetaMaskSession_get_PublicKey_mC8576724D55E627A9BD1B6420E889F6B739B246C (MetaMaskSession_tB8A8DD42927AB8C19D741EE1E9EBF8356776FDDB* __this, const RuntimeMethod* method) 
+{
+	{
+		String_t* L_0 = __this->___publicKey;
+		return L_0;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaMaskSession__ctor_mCB804FD5F41D1421F5A514FFF87E6AE13BA88CE9 (MetaMaskSession_tB8A8DD42927AB8C19D741EE1E9EBF8356776FDDB* __this, RuntimeObject* ___0_ecies, MetaMaskSessionData_t01165BA10C998A87D81EA70D05DAB63A70DBC0F7* ___1_data, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IEciesProvider_tCD2705E3A90867A5BE846FEDF1A2B8A9E00DACFD_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		RuntimeObject* L_0 = ___0_ecies;
+		__this->___ecies = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___ecies), (void*)L_0);
+		MetaMaskSessionData_t01165BA10C998A87D81EA70D05DAB63A70DBC0F7* L_1 = ___1_data;
+		__this->___data = L_1;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___data), (void*)L_1);
+		RuntimeObject* L_2 = __this->___ecies;
+		String_t* L_3;
+		L_3 = InterfaceFuncInvoker0< String_t* >::Invoke(0, IEciesProvider_tCD2705E3A90867A5BE846FEDF1A2B8A9E00DACFD_il2cpp_TypeInfo_var, L_2);
+		__this->____privateKey = L_3;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->____privateKey), (void*)L_3);
+		RuntimeObject* L_4 = __this->___ecies;
+		String_t* L_5 = __this->____privateKey;
+		String_t* L_6;
+		L_6 = InterfaceFuncInvoker1< String_t*, String_t* >::Invoke(1, IEciesProvider_tCD2705E3A90867A5BE846FEDF1A2B8A9E00DACFD_il2cpp_TypeInfo_var, L_4, L_5);
+		__this->___publicKey = L_6;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___publicKey), (void*)L_6);
+		return;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR MetaMaskMessage_t0142395F6D76A2B56EE2EE0B0244489BC5110B5F* MetaMaskSession_PrepareMessage_mA6A903C5014D1C8F753340E646C9BD8824F989B7 (MetaMaskSession_tB8A8DD42927AB8C19D741EE1E9EBF8356776FDDB* __this, RuntimeObject* ___0_data, bool ___1_encrypt, String_t* ___2_walletPublicKey, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&MetaMaskMessage_t0142395F6D76A2B56EE2EE0B0244489BC5110B5F_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	MetaMaskMessage_t0142395F6D76A2B56EE2EE0B0244489BC5110B5F* V_0 = NULL;
+	bool V_1 = false;
+	MetaMaskMessage_t0142395F6D76A2B56EE2EE0B0244489BC5110B5F* V_2 = NULL;
+	int32_t G_B3_0 = 0;
+	{
+		MetaMaskMessage_t0142395F6D76A2B56EE2EE0B0244489BC5110B5F* L_0 = (MetaMaskMessage_t0142395F6D76A2B56EE2EE0B0244489BC5110B5F*)il2cpp_codegen_object_new(MetaMaskMessage_t0142395F6D76A2B56EE2EE0B0244489BC5110B5F_il2cpp_TypeInfo_var);
+		MetaMaskMessage__ctor_m117F2C0544E749DE0FD0136DF223FA630BFC16AE(L_0, NULL);
+		V_0 = L_0;
+		MetaMaskMessage_t0142395F6D76A2B56EE2EE0B0244489BC5110B5F* L_1 = V_0;
+		MetaMaskSessionData_t01165BA10C998A87D81EA70D05DAB63A70DBC0F7* L_2 = __this->___data;
+		String_t* L_3;
+		L_3 = MetaMaskSessionData_get_ChannelId_m19F1CF72D62FEB3C8E796003EF4180943E1A7B2F_inline(L_2, NULL);
+		MetaMaskMessage_set_Id_m603CCBBCF5CB12CABF7BC54663308CEA55FE88EF_inline(L_1, L_3, NULL);
+		bool L_4 = ___1_encrypt;
+		if (!L_4)
+		{
+			goto IL_0027;
+		}
+	}
+	{
+		RuntimeObject* L_5 = __this->___ecies;
+		G_B3_0 = ((!(((RuntimeObject*)(RuntimeObject*)L_5) <= ((RuntimeObject*)(RuntimeObject*)NULL)))? 1 : 0);
+		goto IL_0028;
+	}
+
+IL_0027:
+	{
+		G_B3_0 = 0;
+	}
+
+IL_0028:
+	{
+		V_1 = (bool)G_B3_0;
+		bool L_6 = V_1;
+		if (!L_6)
+		{
+			goto IL_003f;
+		}
+	}
+	{
+		MetaMaskMessage_t0142395F6D76A2B56EE2EE0B0244489BC5110B5F* L_7 = V_0;
+		RuntimeObject* L_8 = ___0_data;
+		String_t* L_9 = ___2_walletPublicKey;
+		String_t* L_10;
+		L_10 = MetaMaskSession_EncryptMessage_m23D0E289C0EB9D012DBE51E60C6FE67DCB052654(__this, L_8, L_9, NULL);
+		MetaMaskMessage_set_Message_m3DFFE203BB2FC73F218B63AD0A7EF4F29AD2DF71_inline(L_7, L_10, NULL);
+		goto IL_0049;
+	}
+
+IL_003f:
+	{
+		MetaMaskMessage_t0142395F6D76A2B56EE2EE0B0244489BC5110B5F* L_11 = V_0;
+		RuntimeObject* L_12 = ___0_data;
+		MetaMaskMessage_set_Message_m3DFFE203BB2FC73F218B63AD0A7EF4F29AD2DF71_inline(L_11, L_12, NULL);
+	}
+
+IL_0049:
+	{
+		MetaMaskMessage_t0142395F6D76A2B56EE2EE0B0244489BC5110B5F* L_13 = V_0;
+		V_2 = L_13;
+		goto IL_004d;
+	}
+
+IL_004d:
+	{
+		MetaMaskMessage_t0142395F6D76A2B56EE2EE0B0244489BC5110B5F* L_14 = V_2;
+		return L_14;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* MetaMaskSession_EncryptMessage_m23D0E289C0EB9D012DBE51E60C6FE67DCB052654 (MetaMaskSession_tB8A8DD42927AB8C19D741EE1E9EBF8356776FDDB* __this, RuntimeObject* ___0_message, String_t* ___1_walletPublicKey, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IEciesProvider_tCD2705E3A90867A5BE846FEDF1A2B8A9E00DACFD_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&JsonConvert_t01281FFED14CC2AEFABB6608315D90ED5C46E0C2_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	String_t* V_0 = NULL;
+	String_t* V_1 = NULL;
+	{
+		RuntimeObject* L_0 = ___0_message;
+		il2cpp_codegen_runtime_class_init_inline(JsonConvert_t01281FFED14CC2AEFABB6608315D90ED5C46E0C2_il2cpp_TypeInfo_var);
+		String_t* L_1;
+		L_1 = JsonConvert_SerializeObject_m277670BD344964CB2A61751E5A3D62DB5B1321C7(L_0, NULL);
+		V_0 = L_1;
+		RuntimeObject* L_2 = __this->___ecies;
+		String_t* L_3 = V_0;
+		String_t* L_4 = ___1_walletPublicKey;
+		String_t* L_5;
+		L_5 = InterfaceFuncInvoker2< String_t*, String_t*, String_t* >::Invoke(2, IEciesProvider_tCD2705E3A90867A5BE846FEDF1A2B8A9E00DACFD_il2cpp_TypeInfo_var, L_2, L_3, L_4);
+		V_1 = L_5;
+		goto IL_0018;
+	}
+
+IL_0018:
+	{
+		String_t* L_6 = V_1;
+		return L_6;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* MetaMaskSession_DecryptMessage_mB5D37CCC98D26814621296CD38CA425E7918812F (MetaMaskSession_tB8A8DD42927AB8C19D741EE1E9EBF8356776FDDB* __this, String_t* ___0_message, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&IEciesProvider_tCD2705E3A90867A5BE846FEDF1A2B8A9E00DACFD_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	String_t* V_0 = NULL;
+	{
+		RuntimeObject* L_0 = __this->___ecies;
+		String_t* L_1 = ___0_message;
+		String_t* L_2 = __this->____privateKey;
+		String_t* L_3;
+		L_3 = InterfaceFuncInvoker2< String_t*, String_t*, String_t* >::Invoke(3, IEciesProvider_tCD2705E3A90867A5BE846FEDF1A2B8A9E00DACFD_il2cpp_TypeInfo_var, L_0, L_1, L_2);
+		V_0 = L_3;
+		goto IL_0016;
+	}
+
+IL_0016:
+	{
+		String_t* L_4 = V_0;
+		return L_4;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* MetaMaskSessionData_get_AppName_mEB2280B78DB230D629B1692ABE8B23D0BB7712D0 (MetaMaskSessionData_t01165BA10C998A87D81EA70D05DAB63A70DBC0F7* __this, const RuntimeMethod* method) 
+{
+	{
+		String_t* L_0 = __this->___U3CAppNameU3Ek__BackingField;
+		return L_0;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaMaskSessionData_set_AppName_m3803F4992A6210E8C82C603484156D72B56C9399 (MetaMaskSessionData_t01165BA10C998A87D81EA70D05DAB63A70DBC0F7* __this, String_t* ___0_value, const RuntimeMethod* method) 
+{
+	{
+		String_t* L_0 = ___0_value;
+		__this->___U3CAppNameU3Ek__BackingField = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CAppNameU3Ek__BackingField), (void*)L_0);
+		return;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* MetaMaskSessionData_get_AppUrl_m62A261E6AF034842BEA7DDE0288FB17CA6C236BA (MetaMaskSessionData_t01165BA10C998A87D81EA70D05DAB63A70DBC0F7* __this, const RuntimeMethod* method) 
+{
+	{
+		String_t* L_0 = __this->___U3CAppUrlU3Ek__BackingField;
+		return L_0;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaMaskSessionData_set_AppUrl_m121706A25D2F7F7B0D83D67C6553F3D239BD930F (MetaMaskSessionData_t01165BA10C998A87D81EA70D05DAB63A70DBC0F7* __this, String_t* ___0_value, const RuntimeMethod* method) 
+{
+	{
+		String_t* L_0 = ___0_value;
+		__this->___U3CAppUrlU3Ek__BackingField = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CAppUrlU3Ek__BackingField), (void*)L_0);
+		return;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* MetaMaskSessionData_get_ChannelId_m19F1CF72D62FEB3C8E796003EF4180943E1A7B2F (MetaMaskSessionData_t01165BA10C998A87D81EA70D05DAB63A70DBC0F7* __this, const RuntimeMethod* method) 
+{
+	{
+		String_t* L_0 = __this->___U3CChannelIdU3Ek__BackingField;
+		return L_0;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaMaskSessionData_set_ChannelId_mEA2073E4D67CEA8304C54F32D41C14C0CB48DC84 (MetaMaskSessionData_t01165BA10C998A87D81EA70D05DAB63A70DBC0F7* __this, String_t* ___0_value, const RuntimeMethod* method) 
+{
+	{
+		String_t* L_0 = ___0_value;
+		__this->___U3CChannelIdU3Ek__BackingField = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CChannelIdU3Ek__BackingField), (void*)L_0);
+		return;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaMaskSessionData__ctor_mE97DC90F811CCE5F5FE6CFD1131461900B94E63D (MetaMaskSessionData_t01165BA10C998A87D81EA70D05DAB63A70DBC0F7* __this, const RuntimeMethod* method) 
+{
+	Guid_t V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	{
+		Guid_t L_0;
+		L_0 = Guid_NewGuid_m1F4894E8DC089811D6252148AD5858E58D43A7BD(NULL);
+		V_0 = L_0;
+		String_t* L_1;
+		L_1 = Guid_ToString_m2BFFD5FA726E03FA707AAFCCF065896C46D5290C((&V_0), NULL);
+		__this->___U3CChannelIdU3Ek__BackingField = L_1;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CChannelIdU3Ek__BackingField), (void*)L_1);
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		return;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MetaMaskSessionData__ctor_m85B95973E39E61EF35122C5232D9C33F2842AC19 (MetaMaskSessionData_t01165BA10C998A87D81EA70D05DAB63A70DBC0F7* __this, String_t* ___0_appName, String_t* ___1_appUrl, const RuntimeMethod* method) 
+{
+	Guid_t V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	bool V_1 = false;
+	bool V_2 = false;
+	{
+		Guid_t L_0;
+		L_0 = Guid_NewGuid_m1F4894E8DC089811D6252148AD5858E58D43A7BD(NULL);
+		V_0 = L_0;
+		String_t* L_1;
+		L_1 = Guid_ToString_m2BFFD5FA726E03FA707AAFCCF065896C46D5290C((&V_0), NULL);
+		__this->___U3CChannelIdU3Ek__BackingField = L_1;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CChannelIdU3Ek__BackingField), (void*)L_1);
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		String_t* L_2 = ___0_appName;
+		bool L_3;
+		L_3 = String_IsNullOrWhiteSpace_m42E1F3B2C358068D645E46F01CF1834DC77A5A10(L_2, NULL);
+		V_1 = L_3;
+		bool L_4 = V_1;
+		if (!L_4)
+		{
+			goto IL_0036;
+		}
+	}
+	{
+		ArgumentException_tAD90411542A20A9C72D5CDA3A84181D8B947A263* L_5 = (ArgumentException_tAD90411542A20A9C72D5CDA3A84181D8B947A263*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&ArgumentException_tAD90411542A20A9C72D5CDA3A84181D8B947A263_il2cpp_TypeInfo_var)));
+		ArgumentException__ctor_m026938A67AF9D36BB7ED27F80425D7194B514465(L_5, ((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteral1D938A683E8B1838039DFDF3DEB7496F9DCC49A5)), NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_5, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&MetaMaskSessionData__ctor_m85B95973E39E61EF35122C5232D9C33F2842AC19_RuntimeMethod_var)));
+	}
+
+IL_0036:
+	{
+		String_t* L_6 = ___1_appUrl;
+		bool L_7;
+		L_7 = String_IsNullOrWhiteSpace_m42E1F3B2C358068D645E46F01CF1834DC77A5A10(L_6, NULL);
+		V_2 = L_7;
+		bool L_8 = V_2;
+		if (!L_8)
+		{
+			goto IL_004b;
+		}
+	}
+	{
+		ArgumentException_tAD90411542A20A9C72D5CDA3A84181D8B947A263* L_9 = (ArgumentException_tAD90411542A20A9C72D5CDA3A84181D8B947A263*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&ArgumentException_tAD90411542A20A9C72D5CDA3A84181D8B947A263_il2cpp_TypeInfo_var)));
+		ArgumentException__ctor_m026938A67AF9D36BB7ED27F80425D7194B514465(L_9, ((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteralA21C5E9FB24305BBD0D938D52C1CDBDC457035AE)), NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_9, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&MetaMaskSessionData__ctor_m85B95973E39E61EF35122C5232D9C33F2842AC19_RuntimeMethod_var)));
+	}
+
+IL_004b:
+	{
+		String_t* L_10 = ___0_appName;
+		MetaMaskSessionData_set_AppName_m3803F4992A6210E8C82C603484156D72B56C9399_inline(__this, L_10, NULL);
+		String_t* L_11 = ___1_appUrl;
+		MetaMaskSessionData_set_AppUrl_m121706A25D2F7F7B0D83D67C6553F3D239BD930F_inline(__this, L_11, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
@@ -26270,162 +26590,49 @@ IL_00cd:
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FetchResponse__ctor_m4756841BFC41AEB768CCD1E2BB49D58AD83D5350 (FetchResponse_t1F23D17168B9A897607404607470FC05CEE17DC2* __this, const RuntimeMethod* method) 
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR String_t* MetaMaskSessionData_get_ChannelId_m19F1CF72D62FEB3C8E796003EF4180943E1A7B2F_inline (MetaMaskSessionData_t01165BA10C998A87D81EA70D05DAB63A70DBC0F7* __this, const RuntimeMethod* method) 
 {
 	{
-		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
-		return;
-	}
-}
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CProcessQueueU3Ed__8__ctor_mFD76957C755DEFB73AFA835A96CA64E6A16B067A (U3CProcessQueueU3Ed__8_tAFB12609EDCB15C8415B8FAB461A8E0D98902AC1* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) 
-{
-	{
-		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
-		int32_t L_0 = ___0_U3CU3E1__state;
-		__this->___U3CU3E1__state = L_0;
-		return;
-	}
-}
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CProcessQueueU3Ed__8_System_IDisposable_Dispose_mC0122F6B4846C811A3B021341CD9A23516C65B01 (U3CProcessQueueU3Ed__8_tAFB12609EDCB15C8415B8FAB461A8E0D98902AC1* __this, const RuntimeMethod* method) 
-{
-	{
-		return;
-	}
-}
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CProcessQueueU3Ed__8_MoveNext_m6E84F030C572F8ED55D28FBBE622B7E0548505F0 (U3CProcessQueueU3Ed__8_tAFB12609EDCB15C8415B8FAB461A8E0D98902AC1* __this, const RuntimeMethod* method) 
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Queue_1_Dequeue_m29938B1EEEB8880C5D5330E62EB703CB93D5ADA7_RuntimeMethod_var);
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Queue_1_get_Count_m315E61E5AFC3D7C6E9AD0750D6115434ED1FD85C_RuntimeMethod_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	int32_t V_0 = 0;
-	bool V_1 = false;
-	{
-		int32_t L_0 = __this->___U3CU3E1__state;
-		V_0 = L_0;
-		int32_t L_1 = V_0;
-		if (!L_1)
-		{
-			goto IL_0012;
-		}
-	}
-	{
-		goto IL_000c;
-	}
-
-IL_000c:
-	{
-		int32_t L_2 = V_0;
-		if ((((int32_t)L_2) == ((int32_t)1)))
-		{
-			goto IL_0014;
-		}
-	}
-	{
-		goto IL_0016;
-	}
-
-IL_0012:
-	{
-		goto IL_0018;
-	}
-
-IL_0014:
-	{
-		goto IL_004d;
-	}
-
-IL_0016:
-	{
-		return (bool)0;
-	}
-
-IL_0018:
-	{
-		__this->___U3CU3E1__state = (-1);
-		goto IL_0055;
-	}
-
-IL_0022:
-	{
-		MetaMaskHttpService_tB3158F44277665DC7C6DC6C39EF9CB15D2E8E12C* L_3 = __this->___U3CU3E4__this;
-		MetaMaskHttpService_tB3158F44277665DC7C6DC6C39EF9CB15D2E8E12C* L_4 = __this->___U3CU3E4__this;
-		Queue_1_t79661E1EE1B7A421C0503DE3C7E79C9A9FD4EA53* L_5 = L_4->___requests;
-		UnityHttpServiceRequest_tE1C78F3296887B84149AB458B19B187B7B4805E6* L_6;
-		L_6 = Queue_1_Dequeue_m29938B1EEEB8880C5D5330E62EB703CB93D5ADA7(L_5, Queue_1_Dequeue_m29938B1EEEB8880C5D5330E62EB703CB93D5ADA7_RuntimeMethod_var);
-		RuntimeObject* L_7;
-		L_7 = MetaMaskHttpService_ProcessRequest_mC4F6C667D4323ECBDBA1EB12C3566E1C4945E076(L_3, L_6, NULL);
-		__this->___U3CU3E2__current = L_7;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CU3E2__current), (void*)L_7);
-		__this->___U3CU3E1__state = 1;
-		return (bool)1;
-	}
-
-IL_004d:
-	{
-		__this->___U3CU3E1__state = (-1);
-	}
-
-IL_0055:
-	{
-		MetaMaskHttpService_tB3158F44277665DC7C6DC6C39EF9CB15D2E8E12C* L_8 = __this->___U3CU3E4__this;
-		Queue_1_t79661E1EE1B7A421C0503DE3C7E79C9A9FD4EA53* L_9 = L_8->___requests;
-		int32_t L_10;
-		L_10 = Queue_1_get_Count_m315E61E5AFC3D7C6E9AD0750D6115434ED1FD85C_inline(L_9, Queue_1_get_Count_m315E61E5AFC3D7C6E9AD0750D6115434ED1FD85C_RuntimeMethod_var);
-		V_1 = (bool)((((int32_t)L_10) > ((int32_t)0))? 1 : 0);
-		bool L_11 = V_1;
-		if (L_11)
-		{
-			goto IL_0022;
-		}
-	}
-	{
-		MetaMaskHttpService_tB3158F44277665DC7C6DC6C39EF9CB15D2E8E12C* L_12 = __this->___U3CU3E4__this;
-		L_12->___isCheckingQueue = (bool)0;
-		return (bool)0;
-	}
-}
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CProcessQueueU3Ed__8_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mD248C2ACC860968D67AB9FB70765A9DBCC607CE1 (U3CProcessQueueU3Ed__8_tAFB12609EDCB15C8415B8FAB461A8E0D98902AC1* __this, const RuntimeMethod* method) 
-{
-	{
-		RuntimeObject* L_0 = __this->___U3CU3E2__current;
+		String_t* L_0 = __this->___U3CChannelIdU3Ek__BackingField;
 		return L_0;
 	}
 }
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CProcessQueueU3Ed__8_System_Collections_IEnumerator_Reset_m64B507012D5DFF846DFACEAAB3E4B2E51ECD1960 (U3CProcessQueueU3Ed__8_tAFB12609EDCB15C8415B8FAB461A8E0D98902AC1* __this, const RuntimeMethod* method) 
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void MetaMaskMessage_set_Id_m603CCBBCF5CB12CABF7BC54663308CEA55FE88EF_inline (MetaMaskMessage_t0142395F6D76A2B56EE2EE0B0244489BC5110B5F* __this, String_t* ___0_value, const RuntimeMethod* method) 
 {
 	{
-		NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A* L_0 = (NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A_il2cpp_TypeInfo_var)));
-		NotSupportedException__ctor_m1398D0CDE19B36AA3DE9392879738C1EA2439CDF(L_0, NULL);
-		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&U3CProcessQueueU3Ed__8_System_Collections_IEnumerator_Reset_m64B507012D5DFF846DFACEAAB3E4B2E51ECD1960_RuntimeMethod_var)));
+		String_t* L_0 = ___0_value;
+		__this->___U3CIdU3Ek__BackingField = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CIdU3Ek__BackingField), (void*)L_0);
+		return;
 	}
 }
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CProcessQueueU3Ed__8_System_Collections_IEnumerator_get_Current_m833037CEDC1DD1BC2853D57AED2326BFE15512D2 (U3CProcessQueueU3Ed__8_tAFB12609EDCB15C8415B8FAB461A8E0D98902AC1* __this, const RuntimeMethod* method) 
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void MetaMaskMessage_set_Message_m3DFFE203BB2FC73F218B63AD0A7EF4F29AD2DF71_inline (MetaMaskMessage_t0142395F6D76A2B56EE2EE0B0244489BC5110B5F* __this, RuntimeObject* ___0_value, const RuntimeMethod* method) 
 {
 	{
-		RuntimeObject* L_0 = __this->___U3CU3E2__current;
-		return L_0;
+		RuntimeObject* L_0 = ___0_value;
+		__this->___U3CMessageU3Ek__BackingField = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CMessageU3Ek__BackingField), (void*)L_0);
+		return;
 	}
 }
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void MetaMaskSessionData_set_AppName_m3803F4992A6210E8C82C603484156D72B56C9399_inline (MetaMaskSessionData_t01165BA10C998A87D81EA70D05DAB63A70DBC0F7* __this, String_t* ___0_value, const RuntimeMethod* method) 
+{
+	{
+		String_t* L_0 = ___0_value;
+		__this->___U3CAppNameU3Ek__BackingField = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CAppNameU3Ek__BackingField), (void*)L_0);
+		return;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void MetaMaskSessionData_set_AppUrl_m121706A25D2F7F7B0D83D67C6553F3D239BD930F_inline (MetaMaskSessionData_t01165BA10C998A87D81EA70D05DAB63A70DBC0F7* __this, String_t* ___0_value, const RuntimeMethod* method) 
+{
+	{
+		String_t* L_0 = ___0_value;
+		__this->___U3CAppUrlU3Ek__BackingField = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CAppUrlU3Ek__BackingField), (void*)L_0);
+		return;
+	}
+}
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RuntimeObject* MetaMaskDataManager_get_Storage_m0139C07149C3C363B3B0A6B21D9C161534B61EFF_inline (MetaMaskDataManager_t3E18FAC430D3797A31831B2D6F83086D1A1204F8* __this, const RuntimeMethod* method) 
 {
 	{
@@ -26437,13 +26644,6 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR MetaMaskSessionData_t01165BA10C99
 {
 	{
 		MetaMaskSessionData_t01165BA10C998A87D81EA70D05DAB63A70DBC0F7* L_0 = __this->___data;
-		return L_0;
-	}
-}
-IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR String_t* MetaMaskSessionData_get_ChannelId_m19F1CF72D62FEB3C8E796003EF4180943E1A7B2F_inline (MetaMaskSessionData_t01165BA10C998A87D81EA70D05DAB63A70DBC0F7* __this, const RuntimeMethod* method) 
-{
-	{
-		String_t* L_0 = __this->___U3CChannelIdU3Ek__BackingField;
 		return L_0;
 	}
 }

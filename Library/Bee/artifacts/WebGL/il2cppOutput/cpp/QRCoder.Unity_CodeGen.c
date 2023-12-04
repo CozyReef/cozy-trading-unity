@@ -25,10 +25,10 @@ static Il2CppMethodPointer s_methodPointers[4] =
 };
 static const int32_t s_InvokerIndices[4] = 
 {
-	2593,
-	2371,
-	1136,
-	1139,
+	2609,
+	2385,
+	1144,
+	1147,
 };
 IL2CPP_EXTERN_C const Il2CppCodeGenModule g_QRCoder_Unity_CodeGenModule;
 const Il2CppCodeGenModule g_QRCoder_Unity_CodeGenModule = 

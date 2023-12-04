@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Thirdweb;
+using UnityEngine.SceneManagement;
 
 public class MainMenuManager : MonoBehaviour
 {
@@ -15,5 +16,11 @@ public class MainMenuManager : MonoBehaviour
     void Update()
     {
         
+    }
+
+
+    public void playGame()
+    {
+        SceneManager.LoadSceneAsync("GamePlayScene");
     }
 }
