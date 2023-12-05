@@ -4,50 +4,10 @@ using UnityEngine;
 
 namespace Thirdweb.Examples
 {
-    [Serializable]
-    public enum NFTType
-    {
-        ERC721,
-        ERC1155
-    }
-
-    [Serializable]
-    public struct NFTQuery
-    {
-        public List<SingleQuery> loadOneNft;
-        public List<MultiQuery> loadMultipleNfts;
-        public List<OwnedQuery> loadOwnedNfts;
-    }
-
-    [Serializable]
-    public struct SingleQuery
-    {
-        public string contractAddress;
-        public string tokenID;
-        public NFTType type;
-    }
-
-    [Serializable]
-    public struct MultiQuery
-    {
-        public string contractAddress;
-        public int startID;
-        public int count;
-        public NFTType type;
-    }
-
-    [Serializable]
-    public struct OwnedQuery
-    {
-        public string contractAddress;
-        public string owner;
-        public NFTType type;
-    }
-
     public class Prefab_NFTLoader : MonoBehaviour
     {
-        [Header("SETTINGS")]
-        public NFTQuery query;
+        public string owner;
+        public string contractAddress;
 
         [Header("UI ELEMENTS (DO NOT EDIT)")]
         public Transform contentParent;
@@ -61,7 +21,9 @@ namespace Thirdweb.Examples
 
             // FindObjectOfType<Prefab_ConnectWallet>()?.OnConnectedCallback.AddListener(() => LoadNFTs());
             // FindObjectOfType<Prefab_ConnectWallet>()?.OnConnectedCallback.AddListener(() => LoadNFTs());
-
+           
+            contractAddress = "0x81696C7A36DFda53B81bE4a84abb1102f6D6e868";
+            
             LoadNFTs();
         }
 
@@ -69,54 +31,15 @@ namespace Thirdweb.Examples
         {
             loadingPanel.SetActive(true);
             List<NFT> nftsToLoad = new List<NFT>();
-
+            owner = ThirdwebManager.Instance.SDK.wallet.GetAddress().ToString();
             try
             {
-                // Get all the NFTs queried
+                Contract contract = ThirdwebManager.Instance.SDK.GetContract(contractAddress);
+                string balance = await contract.Read<string>("balanceOf", owner);
 
-                foreach (SingleQuery singleQuery in query.loadOneNft)
-                {
-                    Contract tempContract = ThirdwebManager.Instance.SDK.GetContract(singleQuery.contractAddress);
+                List<NFT> tempNFTList = await contract.ERC721.GetOwned(owner);
 
-                    NFT tempNFT = singleQuery.type == NFTType.ERC1155 ? await tempContract.ERC1155.Get(singleQuery.tokenID) : await tempContract.ERC721.Get(singleQuery.tokenID);
-
-                    nftsToLoad.Add(tempNFT);
-                }
-            }
-            catch (Exception e)
-            {
-                print($"Error Loading SingleQuery NFTs: {e.Message}");
-            }
-
-            try
-            {
-                foreach (MultiQuery multiQuery in query.loadMultipleNfts)
-                {
-                    Contract tempContract = ThirdwebManager.Instance.SDK.GetContract(multiQuery.contractAddress);
-
-                    List<NFT> tempNFTList =
-                        multiQuery.type == NFTType.ERC1155
-                            ? await tempContract.ERC1155.GetAll(new QueryAllParams() { start = multiQuery.startID, count = multiQuery.count })
-                            : await tempContract.ERC721.GetAll(new QueryAllParams() { start = multiQuery.startID, count = multiQuery.count });
-
-                    nftsToLoad.AddRange(tempNFTList);
-                }
-            }
-            catch (Exception e)
-            {
-                print($"Error Loading MultiQuery NFTs: {e.Message}");
-            }
-
-            try
-            {
-                foreach (OwnedQuery ownedQuery in query.loadOwnedNfts)
-                {
-                    Contract tempContract = ThirdwebManager.Instance.SDK.GetContract(ownedQuery.contractAddress);
-
-                    List<NFT> tempNFTList = ownedQuery.type == NFTType.ERC1155 ? await tempContract.ERC1155.GetOwned(ownedQuery.owner) : await tempContract.ERC721.GetOwned(ownedQuery.owner);
-
-                    nftsToLoad.AddRange(tempNFTList);
-                }
+                nftsToLoad.AddRange(tempNFTList);
             }
             catch (Exception e)
             {

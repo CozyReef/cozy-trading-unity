@@ -56,6 +56,9 @@ namespace Thirdweb.Examples
         public UnityEvent OnDisconnectFailed;
         public UnityEvent OnSwitchNetworkFailed;
 
+        [Header("Connected State")]
+        public GameObject Menu;
+
         [Header("UI ELEMENTS (DANGER ZONE)")]
         [Header("Connecting State")]
         public Button ConnectButton;
@@ -70,6 +73,8 @@ namespace Thirdweb.Examples
         public TMP_Text ConnectedButtonBalanceText;
         public TMP_Text ConnectedButtonAddressText;
         public Image ConnectedButtonWalletIcon;
+        public GameObject NftLoaderObject;
+        public Prefab_NFTLoader NftLoader;
 
         [Header("Connected State Dropdown")]
         public GameObject ConnectedDropdownPanel;
@@ -272,6 +277,8 @@ namespace Thirdweb.Examples
                 LoadingPanel.SetActive(false);
                 ShowConnectedState();
                 OnConnect?.Invoke();
+                NftLoaderObject.SetActive(true);
+                //Menu.GetComponent<MainMenuManager>().playGame();
             }
             catch (System.Exception e)
             {
@@ -371,6 +378,7 @@ namespace Thirdweb.Examples
                 SwitchNetworkPanel.SetActive(false);
                 ShowConnectedState();
                 OnSwitchNetwork?.Invoke();
+                NftLoader.LoadNFTs();
             }
             catch (System.Exception e)
             {
