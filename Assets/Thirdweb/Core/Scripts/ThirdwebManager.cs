@@ -23,7 +23,7 @@ namespace Thirdweb
     public class ThirdwebManager : MonoBehaviour
     {
         [Tooltip("The chain to initialize the SDK with")]
-        public string activeChain = "avalanche-fuji";
+        public string activeChain = "goerli";
 
         [Tooltip("Support any chain by adding it to this list from the inspector")]
         public List<ChainData> supportedChains =
