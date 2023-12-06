@@ -13,8 +13,9 @@ public class MainMenuManager : MonoBehaviour {
     public GameObject activateAccountButton;
 
     void Start() {
+        
         sdk = ThirdwebManager.Instance.SDK;
-        Debug.Log(CozyTradingPlayerABI.text);
+        
         CozyTradingPlayer = sdk.GetContract(CozyTradingPlayerAddress, CozyTradingPlayerABI.text);
     }
     public void playGame() {
@@ -35,7 +36,13 @@ public class MainMenuManager : MonoBehaviour {
 
     public async void OnActivateAccount() {
         try {
-            TransactionResult result = await CozyTradingPlayer.Write("activatePlayer", new TransactionRequest() { value = "5000000" });
+            // , new TransactionRequest() { value = "5000000" }
+            TransactionResult result = await CozyTradingPlayer.Write("activatePlayer");
+            if (result.receipt.status == 1)
+            {
+            SceneManager.LoadSceneAsync("GamePlayScene");
+            }
+            
         } catch (Nethereum.Contracts.SmartContractCustomErrorRevertException e) {
             Debug.Log(e);
         }

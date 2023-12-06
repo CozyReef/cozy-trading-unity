@@ -636,7 +636,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CozyTradingPlayerABI: {fileID: 4900000, guid: 9ae03032bf1784176b5dc01fae076e2f, type: 3}
-  CozyTradingPlayerAddress: 0x5FbDB2315678afecb367f032d93F642f64180aa3
+  CozyTradingPlayerAddress: 0x2bdCC0de6bE1f7D2ee689a0342D76F52E8EFABa3
   activateAccountButton: {fileID: 1445244350}
 --- !u!4 &1648494510
 Transform:
@@ -736,6 +736,10 @@ PrefabInstance:
     - target: {fileID: 4404896360829706404, guid: 379ed01658d62a14484f953196ff19db, type: 3}
       propertyPath: activeChain
       value: avalanche-fuji
+      objectReference: {fileID: 0}
+    - target: {fileID: 4404896360829706404, guid: 379ed01658d62a14484f953196ff19db, type: 3}
+      propertyPath: supportedChains.Array.data[7].chainId
+      value: 31337
       objectReference: {fileID: 0}
     - target: {fileID: 4404896360829706404, guid: 379ed01658d62a14484f953196ff19db, type: 3}
       propertyPath: supportedChains.Array.data[7].rpcOverride
