@@ -248,9 +248,10 @@ namespace Thirdweb
             this.deployer = new Deployer();
             this.storage = new Storage(options.storage, options.clientId);
 
-            string rpc = !chainOrRPC.StartsWith("https://")
+            string rpc = !chainOrRPC.StartsWith("https://") && !chainOrRPC.StartsWith("http://")
                 ? (string.IsNullOrEmpty(options.clientId) ? $"https://{chainOrRPC}.rpc.thirdweb.com/" : $"https://{chainOrRPC}.rpc.thirdweb.com/{options.clientId}")
                 : chainOrRPC;
+            Debug.Log("RPC: {rpc}");
 
             if (new System.Uri(rpc).Host.EndsWith(".thirdweb.com") && !rpc.Contains("bundleId="))
                 rpc = rpc.AppendBundleIdQueryParam();

@@ -136,8 +136,10 @@ namespace Thirdweb
                 return;
             }
 
-            if (initializeOnAwake)
+            if (initializeOnAwake) {
                 Initialize(activeChain);
+                
+            }
         }
 
         public void Initialize(string chainIdentifier)
@@ -165,9 +167,6 @@ namespace Thirdweb
 
                 if (string.IsNullOrEmpty(chainData.chainId) || !BigInteger.TryParse(chainData.chainId, out _))
                     throw new UnityException($"Could not add {chainData.identifier} to supported chains, you must provide a valid chain ID!");
-
-                if (!string.IsNullOrEmpty(chainData.rpcOverride) && !chainData.rpcOverride.StartsWith("https://"))
-                    throw new UnityException($"Could not add {chainData.identifier} to supported chains, RPC overrides must start with https:// or be left empty to use thirdweb RPCs!");
 
                 string rpc = string.IsNullOrEmpty(chainData.rpcOverride)
                     ? (string.IsNullOrEmpty(clientId) ? $"https://{chainData.identifier}.rpc.thirdweb.com/" : $"https://{chainData.identifier}.rpc.thirdweb.com/{clientId}")
