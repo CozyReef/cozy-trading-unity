@@ -6,11 +6,16 @@ using UnityEngine.SceneManagement;
 
 public class MainMenuManager : MonoBehaviour {
     ThirdwebSDK sdk;
-    Contract playerContract;
+    public TextAsset CozyTradingPlayerABI;
+    private Contract CozyTradingPlayer;
+    public string CozyTradingPlayerAddress;
+
     public GameObject activateAccountButton;
+
     void Start() {
         sdk = ThirdwebManager.Instance.SDK;
-        playerContract = sdk.GetContract("0x530E933Bd4e688222456D9d16a43D08712534c93");
+        Debug.Log(CozyTradingPlayerABI.text);
+        CozyTradingPlayer = sdk.GetContract(CozyTradingPlayerAddress, CozyTradingPlayerABI.text);
     }
     public void playGame() {
         SceneManager.LoadSceneAsync("GamePlayScene");
@@ -18,7 +23,9 @@ public class MainMenuManager : MonoBehaviour {
 
     public async void OnConnectWallet() {
         var address = await sdk.wallet.GetAddress();
-        var data = await playerContract.Read<bool>("isActivated", address);
+        var data = await CozyTradingPlayer.Read<bool>("isActivated", address);
+        Debug.Log(data);
+        Debug.Log(address);
         if (data == true) {
             SceneManager.LoadSceneAsync("GamePlayScene");
         } else {
@@ -27,7 +34,10 @@ public class MainMenuManager : MonoBehaviour {
     }
 
     public async void OnActivateAccount() {
-        TransactionResult result = await playerContract.Write("activatePlayer");
-        Debug.Log(result);
+        try {
+            TransactionResult result = await CozyTradingPlayer.Write("activatePlayer", new TransactionRequest() { value = "5000000" });
+        } catch (Nethereum.Contracts.SmartContractCustomErrorRevertException e) {
+            Debug.Log(e);
+        }
     }
 }
