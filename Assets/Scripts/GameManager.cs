@@ -96,8 +96,8 @@ public class GameManager : MonoBehaviour
             Debug.Log($"requiredLevel {requiredLevel}");
             if (requiredLevel > playerSkills[skillType].Level)
             {
-               Debug.Log($"Required lvl {requiredLevel}, player lvl {playerSkills[skillType].Level}");
-               return;
+                Debug.Log($"Required lvl {requiredLevel}, player lvl {playerSkills[skillType].Level}");
+                return;
             }
             if (totalPlayerResources + 1 > playerCargoSize)
             {
@@ -105,12 +105,16 @@ public class GameManager : MonoBehaviour
                 return;
             }
             Debug.Log($"Collecting...");
-            await CozyTradingCampsite.Write("collect", resourceId);
+            TransactionResult result = await CozyTradingCampsite.Write("collect", resourceId);
+            if (result.receipt.status == 1)
+            {
+                Debug.Log($"Collected {resourceId}");
+            }
         }
         catch (Nethereum.Contracts.SmartContractCustomErrorRevertException e)
         {
-        Debug.Log(e);
-     
+            Debug.Log(e);
+
         }
     }
 

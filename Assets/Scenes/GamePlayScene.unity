@@ -6832,27 +6832,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CozyTradingPlayerABI: {fileID: 4900000, guid: 9ae03032bf1784176b5dc01fae076e2f, type: 3}
-  CozyTradingPlayerAddress: 0x2bdCC0de6bE1f7D2ee689a0342D76F52E8EFABa3
+  CozyTradingPlayerAddress: 0xD8a5a9b31c3C0232E196d518E89Fd8bF83AcAd43
   CozyTradingCampsiteABI: {fileID: 4900000, guid: 63772e9bcfeef4ac696c6350d7690ab1, type: 3}
-  CozyTradingCampsiteAddress: 0x7969c5eD335650692Bc04293B07F5BF2e7A673C0
+  CozyTradingCampsiteAddress: 0xDC11f7E700A4c898AE5CAddB1082cFfa76512aDD
   CozyTradingResourcesABI: {fileID: 4900000, guid: 040bf880df34449f1b3930f778e786d7, type: 3}
-  CozyTradingResourcesAddress: 0x162A433068F51e18b7d13932F27e66a3f99E6890
+  CozyTradingResourcesAddress: 0x172076E0166D1F9Cc711C77Adf8488051744980C
   totalResources: 0
   totalPlayerResources: 0
+  playerCargoSize: 0
   typesOfResources: 3
-  totalPlayerCopper: 0
-  totalPlayerTin: 0
-  totalPlayerIron: 0
   playerPebbles: 0
   typesOfSkills: 4
-  miningLevel: 0
-  miningXP: 0
-  smithingLevel: 0
-  smithingXP: 0
-  woodcuttingLevel: 0
-  woodcuttingXP: 0
-  craftingLevel: 0
-  craftingXP: 0
 --- !u!4 &1208444297
 Transform:
   m_ObjectHideFlags: 0
