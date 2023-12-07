@@ -55,7 +55,7 @@ public class GameManager : MonoBehaviour
         playerAddress = await sdk.wallet.GetAddress();
         totalResources = await CozyTradingResources.Read<int>("getTotalNumberOfResources");
         InitializeOres();
-        GetTotalPlayerResources();
+        GetPlayerResources();
         GetPlayerSkillInfo();
         GetPlayerPebbles();
         GetCargoSize();
@@ -66,7 +66,10 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        GetPlayerResources();
+        GetPlayerSkillInfo();
+        GetPlayerPebbles();
+        GetCargoSize();
     }
 
     async void InitializeOres()
@@ -133,7 +136,7 @@ public class GameManager : MonoBehaviour
 
     // -------------- Getters --------------
 
-    public async void GetTotalPlayerResources()
+    public async void GetPlayerResources()
     {
         try
         {
@@ -141,7 +144,7 @@ public class GameManager : MonoBehaviour
             {
                 int amountOfResource = await CozyTradingPlayer.Read<int>("getPlayerCargoResources", playerAddress, i);
                 playerResources[i] = amountOfResource;
-                totalPlayerResources += amountOfResource;
+                totalPlayerResources = await CozyTradingPlayer.Read<int>("getPlayerCargoLoad", playerAddress);
             }
             Debug.Log($"In the cargo: Copper: {playerResources[0]}, Tin: {playerResources[1]}, Iron: {playerResources[2]}");
             Debug.Log($"Total in Cargo: {totalPlayerResources}");
