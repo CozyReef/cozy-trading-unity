@@ -48,7 +48,6 @@ public class GameManager : MonoBehaviour
     async void Start()
     {
         sdk = ThirdwebManager.Instance.SDK;
-        Debug.Log(sdk);
         CozyTradingPlayer = sdk.GetContract(CozyTradingPlayerAddress, CozyTradingPlayerABI.text);
         CozyTradingCampsite = sdk.GetContract(CozyTradingCampsiteAddress, CozyTradingCampsiteABI.text);
         CozyTradingResources = sdk.GetContract(CozyTradingResourcesAddress, CozyTradingResourcesABI.text);

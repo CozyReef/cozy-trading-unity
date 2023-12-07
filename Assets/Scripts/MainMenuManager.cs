@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Thirdweb;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class MainMenuManager : MonoBehaviour {
     ThirdwebSDK sdk;
@@ -36,8 +37,7 @@ public class MainMenuManager : MonoBehaviour {
 
     public async void OnActivateAccount() {
         try {
-            // , new TransactionRequest() { value = "5000000" }
-            TransactionResult result = await CozyTradingPlayer.Write("activatePlayer");
+            TransactionResult result = await CozyTradingPlayer.Write("activatePlayer", new TransactionRequest() { gasPrice = "1000000000" });
             if (result.receipt.status == 1)
             {
             SceneManager.LoadSceneAsync("GamePlayScene");

@@ -209,6 +209,9 @@ namespace Thirdweb
 
                 var gasPrice = transactionOverrides?.gasPrice != null ? new HexBigInteger(BigInteger.Parse(transactionOverrides?.gasPrice)) : null;
 
+                Debug.Log("Value: " + value);
+                Debug.Log("Gas: " + gas);
+                Debug.Log("GasPrice: " + gasPrice);
                 var hash = await function.SendTransactionAsync(
                     from: transactionOverrides?.from ?? await ThirdwebManager.Instance.SDK.wallet.GetAddress(),
                     gas: gas,
