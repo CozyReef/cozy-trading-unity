@@ -168,6 +168,24 @@
   },
   {
     "type": "function",
+    "name": "increaseCargoSize",
+    "inputs": [
+      {
+        "name": "_playerAddress",
+        "type": "address",
+        "internalType": "address"
+      },
+      {
+        "name": "_additionalSize",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "outputs": [],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "type": "function",
     "name": "increasePlayerSkillLevel",
     "inputs": [
       {
@@ -316,12 +334,79 @@
   },
   {
     "type": "function",
+    "name": "setShopController",
+    "inputs": [
+      {
+        "name": "_shopController",
+        "type": "address",
+        "internalType": "address"
+      }
+    ],
+    "outputs": [],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "type": "function",
+    "name": "shopController",
+    "inputs": [],
+    "outputs": [
+      {
+        "name": "",
+        "type": "address",
+        "internalType": "contract CozyTradingShop"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "type": "function",
     "name": "transferOwnership",
     "inputs": [
       {
         "name": "newOwner",
         "type": "address",
         "internalType": "address"
+      }
+    ],
+    "outputs": [],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "type": "function",
+    "name": "updatePlayerCargoResources",
+    "inputs": [
+      {
+        "name": "_playerAddress",
+        "type": "address",
+        "internalType": "address"
+      },
+      {
+        "name": "_resourceType",
+        "type": "uint256",
+        "internalType": "uint256"
+      },
+      {
+        "name": "_newAmount",
+        "type": "uint256",
+        "internalType": "uint256"
+      }
+    ],
+    "outputs": [],
+    "stateMutability": "nonpayable"
+  },
+  {
+    "type": "function",
+    "name": "updatePlayerPebbles",
+    "inputs": [
+      {
+        "name": "_playerAddress",
+        "type": "address",
+        "internalType": "address"
+      },
+      {
+        "name": "_newAmount",
+        "type": "uint256",
+        "internalType": "uint256"
       }
     ],
     "outputs": [],
@@ -360,6 +445,11 @@
   {
     "type": "error",
     "name": "NotGameController",
+    "inputs": []
+  },
+  {
+    "type": "error",
+    "name": "NotShopController",
     "inputs": []
   },
   {
