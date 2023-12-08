@@ -7,11 +7,12 @@ public class MiningLevel : MonoBehaviour
 {
 
     public Text Level;
-    public GameManager _GameManager;
 
     // Update is called once per frame
     void Update()
     {
-        Level.text = (_GameManager.skillLevel[0]).ToString();
+        if (GameManager.manager.skillLevel.Length > 0) {
+            Level.text = (GameManager.manager.skillLevel[0]).ToString();
+        }
     }
 }

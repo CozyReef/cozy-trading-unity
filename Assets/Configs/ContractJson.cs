@@ -4,7 +4,8 @@ using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
  
 namespace ContractJson {
-    public class Contracts {
+    public class ContractSettings {
+        public string environment;
         public List<Contract> contracts;
     }
     public class Contract {

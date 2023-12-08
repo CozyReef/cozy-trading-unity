@@ -1,0 +1,1 @@
+{'Environment':'development','Contracts':[{'name':'CozyTradingPlayer','address':'0x851356ae760d987E095750cCeb3bC6014560891C'},{'name':'CozyTradingCampsite','address':'0xf5059a5D33d5853360D16C683c16e67980206f36'},{'name':'CozyTradingResources','address':'0x95401dc811bb5740090279Ba06cfA8fcF6113778'},{'name':'CozyTradingShop','address':'0x70e0bA845a1A0F2DA3359C97E0285013525FFC49'}]}

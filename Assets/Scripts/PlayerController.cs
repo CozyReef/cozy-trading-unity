@@ -16,7 +16,9 @@ public class PlayerController : MonoBehaviour
     protected SkeletonAnimation skeletonAnimation;
     protected Spine.AnimationState animationState;
     protected Spine.Skeleton skeleton;
-    // Start is called before the first frame update
+
+    private bool canMove = true;
+
     void Start()
     {
         skeletonAnimation = GetComponent<SkeletonAnimation>();
@@ -31,6 +33,11 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
+        if (!canMove)
+        {
+            return;
+        }
+
         input.x = Input.GetAxis("Horizontal");
         input.y = Input.GetAxis("Vertical");
         transform.position = new Vector3(transform.position.x + (Input.GetAxis("Horizontal") * moveSpeed * Time.deltaTime), transform.position.y + (Input.GetAxis("Vertical") * moveSpeed * Time.deltaTime), transform.position.z);
@@ -62,37 +69,24 @@ public class PlayerController : MonoBehaviour
         }
         isMoving = isNowWalking;
     }
-    // Function that runs for coroutines
-    // This function will run in the routine manner
-    IEnumerator Move(Vector3 targetPos)
-    {
-        isMoving = true;
-        while ((targetPos - transform.position).sqrMagnitude > Mathf.Epsilon)
-        {
-            transform.position = Vector3.MoveTowards(transform.position, targetPos, moveSpeed * Time.deltaTime);
-            yield return null; // this is only for coroutines
 
-        }
-        transform.position = targetPos;
-        isMoving = false;
-
-    }
-
-    private bool isWalkable(Vector3 targetPos)
-    {
-        if (Physics2D.OverlapCircle(targetPos, 0.1f, solidObjectsLayer) != null)
-        {
-            return false;
-        }
-        return true;
-    }
-
-     void OnTriggerEnter2D(Collider2D other)
+    void OnTriggerEnter2D(Collider2D other)
     {
         // Debug.Log("collision");
         // Debug.Log(other.gameObject.name);
-
     }
 
-
+    public void SetIsMining(bool isMining)
+    {
+        if (isMining)
+        {
+            animationState.SetAnimation(0, "mining", true);
+            canMove = false;
+        }
+        else
+        {
+            animationState.SetAnimation(0, "idle", true);
+            canMove = true;
+        }
+    }
 }

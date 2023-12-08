@@ -13,6 +13,8 @@ public class Ore : MonoBehaviour
         Iron
     }
     private Dictionary<OreType, Sprite> oreTypeToSprite;
+
+    public GameObject requirementsNotMet;
     
     public OreType oreType;
     public int resourceId;
@@ -31,18 +33,18 @@ public class Ore : MonoBehaviour
             {OreType.Iron, Resources.Load<Sprite>("Sprites/ore_iron")}
         };
         oreImage.sprite = oreTypeToSprite[oreType];
+        if (oreType == OreType.Iron) {
+            requirementsNotMet.SetActive(true);
+        }
     }
 
-    public void OnClickCollect()
+    public async void OnClickCollect()
     {
         Debug.Log($"clicked on ore {resourceId}");
         if (!isCollected)
         {
             GameManager.manager.Collect(resourceId);
             canvas.SetActive(false);
-            // TODO: we have to wait and check if this function executed without errors
-            //       now the resource is set to collected even if it is not collected
-           
         }
         
     }

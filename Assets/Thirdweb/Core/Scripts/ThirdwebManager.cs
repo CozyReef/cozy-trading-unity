@@ -119,6 +119,7 @@ namespace Thirdweb
         public GameObject EmbeddedWalletPrefab;
 
         public ThirdwebSDK SDK;
+        public bool isInitialized = false;
 
         public static ThirdwebManager Instance { get; private set; }
 
@@ -138,7 +139,6 @@ namespace Thirdweb
 
             if (initializeOnAwake) {
                 Initialize(activeChain);
-                
             }
         }
 
@@ -289,6 +289,7 @@ namespace Thirdweb
             // Pass active chain rpc and chainId
 
             SDK = new ThirdwebSDK(activeChainRpc, BigInteger.Parse(activeChainId), options);
+            isInitialized = true;
         }
     }
 }

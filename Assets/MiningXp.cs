@@ -5,14 +5,13 @@ using UnityEngine.UI;
 
 public class MiningXp : MonoBehaviour
 {
-
     public Text Xp;
-    public GameManager _GameManager;
 
     // Update is called once per frame
     void Update()
     {
-        Xp.text = (_GameManager.skillXp[0]).ToString();
-        Debug.Log("XP:" + _GameManager.skillXp[0]);
+        if (GameManager.manager.skillXp.Length > 0) {
+            Xp.text = (GameManager.manager.skillXp[0]).ToString();
+        }
     }
 }

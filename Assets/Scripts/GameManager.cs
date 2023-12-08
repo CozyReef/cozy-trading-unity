@@ -16,16 +16,12 @@ public class GameManager : MonoBehaviour
     ThirdwebSDK sdk;
     string playerAddress;
 
-    [Header("Contracts")]
-    public TextAsset ContractConfig;
-    private Dictionary<string, string> contractNameToAddress = new Dictionary<string, string>();
-    private Dictionary<string, string> contractNameToAbi = new Dictionary<string, string>();
-
     private Contract CozyTradingPlayer;
     private Contract CozyTradingCampsite;
     private Contract CozyTradingResources;
     private Contract CozyTradingShop;
    
+   public PlayerController player;
 
     [Header("Resources")]
     public int totalResources;
@@ -41,7 +37,7 @@ public class GameManager : MonoBehaviour
     [Header("Skills")]
     // TODO: write solidity function to get how many different skills we have
     public int typesOfSkills = 4;
-   public Skill[] playerSkills = new Skill[4]; // 0 - mining, 1 - smithing, 2 - woodcutting, 3 - crafting (index is the type)
+    public Skill[] playerSkills = new Skill[4]; // 0 - mining, 1 - smithing, 2 - woodcutting, 3 - crafting (index is the type)
     // Q: Why cant I make the struct public?
     public int[] skillLevel = new int[4];
     public int[] skillXp = new int[4];
@@ -51,18 +47,11 @@ public class GameManager : MonoBehaviour
     {
         manager = this;
         sdk = ThirdwebManager.Instance.SDK;
-        string jsonString = ContractConfig.text;
-        ContractJson.Contracts contracts = JsonConvert.DeserializeObject<ContractJson.Contracts>(jsonString);
-        for (int i = 0; i < contracts.contracts.Count; i++)
-        {
-            contractNameToAddress.Add(contracts.contracts[i].name, contracts.contracts[i].address);
-            contractNameToAbi.Add(contracts.contracts[i].name, Resources.Load<TextAsset>($"ContractABIs/{contracts.contracts[i].name}").text);
-        }
 
-        CozyTradingPlayer = sdk.GetContract(contractNameToAddress["CozyTradingPlayer"], contractNameToAbi["CozyTradingPlayer"]);
-        CozyTradingCampsite = sdk.GetContract(contractNameToAddress["CozyTradingCampsite"], contractNameToAbi["CozyTradingCampsite"]);
-        CozyTradingResources = sdk.GetContract(contractNameToAddress["CozyTradingResources"], contractNameToAbi["CozyTradingResources"]);
-        CozyTradingShop = sdk.GetContract(contractNameToAddress["CozyTradingShop"], contractNameToAbi["CozyTradingShop"]);
+        CozyTradingPlayer = ContractManager.Instance.GetContract("CozyTradingPlayer");
+        CozyTradingCampsite = ContractManager.Instance.GetContract("CozyTradingCampsite");
+        CozyTradingResources = ContractManager.Instance.GetContract("CozyTradingResources");
+        CozyTradingShop = ContractManager.Instance.GetContract("CozyTradingShop");
 
         playerAddress = await sdk.wallet.GetAddress();
         totalResources = await CozyTradingResources.Read<int>("getTotalNumberOfResources");
@@ -71,8 +60,6 @@ public class GameManager : MonoBehaviour
         GetPlayerSkillInfo();
         GetPlayerPebbles();
         GetCargoSize();
-        // //For testing
-        // GetResourceInfo(1);
 
         // Listen to events 
         var resourcesListener = CozyTradingResources.events.ListenToAll((ContractEvent<object> anyEvent) => {
@@ -81,7 +68,6 @@ public class GameManager : MonoBehaviour
             {
                 Debug.Log(anyEvent.data);
                 UpdateOres();
-
             }
         });
         var campsiteListener = CozyTradingCampsite.events.ListenToAll((ContractEvent<object> anyEvent) => {
@@ -92,19 +78,8 @@ public class GameManager : MonoBehaviour
                 UpdateOres();
                 GetPlayerResources();
                 GetPlayerSkillInfo();
-
-
             }
         });
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        // GetPlayerResources();
-        // GetPlayerSkillInfo();
-        // GetPlayerPebbles();
-        // GetCargoSize();
     }
 
     async void UpdateOres()
@@ -118,8 +93,6 @@ public class GameManager : MonoBehaviour
             int oreID = oreScript.resourceId;
             bool isCollected = await CozyTradingCampsite.Read<bool>("isResourceCollectedByPlayer", oreID, playerAddress);
             oreScript.SetCollected(isCollected);
-            
-            
         }
     }
 
@@ -143,10 +116,12 @@ public class GameManager : MonoBehaviour
                 return;
             }
             Debug.Log($"Collecting...");
-            TransactionResult result = await CozyTradingCampsite.Write("collect", new TransactionRequest() { gasPrice = "1000000000" }, resourceId);
+            player.SetIsMining(true);
+            TransactionResult result = await CozyTradingCampsite.Write("collect", resourceId);
             if (result.receipt.status == 1)
             {
                 Debug.Log($"Collected {resourceId}");
+                player.SetIsMining(false);
             }
         }
         catch (Nethereum.Contracts.SmartContractCustomErrorRevertException e)

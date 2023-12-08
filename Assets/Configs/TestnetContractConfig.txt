@@ -1,0 +1,21 @@
+{
+  'Environment': 'testnet',
+  'Contracts': [
+    {
+      'name':'CozyTradingPlayer',
+      'address':'0x8f8Fccf5b7BA826da87fe211e59CAc75CDa8d9e2'
+    },
+    {
+      'name':'CozyTradingCampsite',
+      'address':'0x13DeC950597026c31aD43Ef534b479d9E5E977a8'
+    },
+    {
+      'name':'CozyTradingResources',
+      'address':'0x22e0CC5B4e5C68537FEce3c763e1076Ddf3288e9'
+    },
+    {
+      'name':'CozyTradingShop',
+      'address':'0x5455C52Dcd6ebF189e37D5aBFc3a0BA6ED7C21b6'
+    }
+  ]
+}
