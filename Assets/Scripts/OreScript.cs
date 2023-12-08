@@ -21,6 +21,7 @@ public class Ore : MonoBehaviour
     public Image oreImage;
     public GameObject canvas;
     public Sprite collectedOreSprite;
+    public Sprite oreSprite;
 
     void Start()
     {
@@ -41,18 +42,25 @@ public class Ore : MonoBehaviour
             canvas.SetActive(false);
             // TODO: we have to wait and check if this function executed without errors
             //       now the resource is set to collected even if it is not collected
-            SetCollected();
+           
         }
         
     }
 
-    public void SetCollected()
+    public void SetCollected(bool _isCollected)
     {
-        isCollected = true;
+        isCollected = _isCollected;
         Color oldColor = gameObject.GetComponent<SpriteRenderer>().color;
         SpriteRenderer spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
+        if (isCollected)
+        {
         spriteRenderer.color = new Color(oldColor.r, oldColor.g, oldColor.b, 0.7f);
         spriteRenderer.sprite = collectedOreSprite;
+        } else
+        {
+            spriteRenderer.color = new Color(oldColor.r, oldColor.g, oldColor.b, 1f);
+            spriteRenderer.sprite = oreSprite;
+        }
     }
 
     public void OnTriggerEnter2D(Collider2D other)
