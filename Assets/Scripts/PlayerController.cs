@@ -34,38 +34,33 @@ public class PlayerController : MonoBehaviour
         input.x = Input.GetAxis("Horizontal");
         input.y = Input.GetAxis("Vertical");
         transform.position = new Vector3(transform.position.x + (Input.GetAxis("Horizontal") * moveSpeed * Time.deltaTime), transform.position.y + (Input.GetAxis("Vertical") * moveSpeed * Time.deltaTime), transform.position.z);
-        mainCamera.transform.position = transform.position;
-        bool isNowWalking = input.x != 0 || input.y != 0;
-        if (isNowWalking)
+        mainCamera.transform.position = new Vector3(transform.position.x, transform.position.y, -10);
+        if (input.x > 0)
         {
-            if (input.x > 0)
-            {
-                transform.rotation.y = 180f;
-            }
-            else if (input.x < 0)
-            {
-                transform.rotation.y = 0f;
-            }
+            transform.eulerAngles = new Vector3(
+                transform.eulerAngles.x,
+                180f,
+                transform.eulerAngles.z
+            );
+        }
+        else if (input.x < 0)
+        {
+            transform.eulerAngles = new Vector3(
+                transform.eulerAngles.x,
+                0f,
+                transform.eulerAngles.z
+            );
+        }
+        bool isNowWalking = input.x != 0 || input.y != 0;
+        if (isNowWalking && !isMoving)
+        {
             animationState.SetAnimation(0, "walk", true);
         }
-        else
+        else if (!isNowWalking && isMoving)
         {
             animationState.SetAnimation(0, "idle", true);
         }
-        // if (!isMoving)
-        // {
-
-        //     if (input != Vector2.zero)
-        //     {
-        //         animator.SetFloat("moveX", input.x);
-        //         animator.SetFloat("moveY", input.y);
-
-        //         if (isWalkable(targetPos)){ 
-        //         //This will run constantly in my game
-        //         StartCoroutine(Move(targetPos));
-        //         }
-        //     }
-        // }
+        isMoving = isNowWalking;
     }
     // Function that runs for coroutines
     // This function will run in the routine manner
@@ -92,9 +87,10 @@ public class PlayerController : MonoBehaviour
         return true;
     }
 
-     void OnCollisionEnter2D(Collision2D collision)
+     void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log(collision.gameObject.name);
+        // Debug.Log("collision");
+        // Debug.Log(other.gameObject.name);
 
     }
 

@@ -11,6 +11,7 @@ public class Skill
 
 public class GameManager : MonoBehaviour
 {
+    public static GameManager manager;
     ThirdwebSDK sdk;
     string playerAddress;
 
@@ -33,7 +34,7 @@ public class GameManager : MonoBehaviour
     public int playerCargoSize;
     // TODO: write solidity function to get how many different resources we have
     public int typesOfResources = 3; // 0 - copper, 1 - tin, 2 - iron (index is the type)
-    int[] playerResources = new int[3];
+    public int[] playerResources = new int[3];
    
     [Header("Pebbles")]
     public int playerPebbles;
@@ -47,6 +48,7 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     async void Start()
     {
+        manager = this;
         sdk = ThirdwebManager.Instance.SDK;
         CozyTradingPlayer = sdk.GetContract(CozyTradingPlayerAddress, CozyTradingPlayerABI.text);
         CozyTradingCampsite = sdk.GetContract(CozyTradingCampsiteAddress, CozyTradingCampsiteABI.text);
@@ -58,22 +60,24 @@ public class GameManager : MonoBehaviour
         GetPlayerSkillInfo();
         GetPlayerPebbles();
         GetCargoSize();
-        //For testing
-        GetResourceInfo(1);
+        // //For testing
+        // GetResourceInfo(1);
     }
 
     // Update is called once per frame
     void Update()
     {
-        GetPlayerResources();
-        GetPlayerSkillInfo();
-        GetPlayerPebbles();
-        GetCargoSize();
+        // GetPlayerResources();
+        // GetPlayerSkillInfo();
+        // GetPlayerPebbles();
+        // GetCargoSize();
     }
 
     async void InitializeOres()
     {
-        for (int i = 0; i < totalResources; i++)
+        // TODO: Replace this with total resources, 10 ores don't fit on the map right now
+        int oresOnMap = GameObject.FindGameObjectsWithTag("Ore").Length;
+        for (int i = 0; i < oresOnMap; i++)
         {
             GameObject Ore = GameObject.FindGameObjectsWithTag("Ore")[i];
             Ore oreScript = Ore.GetComponent<Ore>();
@@ -107,16 +111,16 @@ public class GameManager : MonoBehaviour
                 return;
             }
             Debug.Log($"Collecting...");
-            TransactionResult result = await CozyTradingCampsite.Write("collect", resourceId);
+            TransactionResult result = await CozyTradingCampsite.Write("collect", new TransactionRequest() { gasPrice = "1000000000" }, resourceId);
             if (result.receipt.status == 1)
             {
                 Debug.Log($"Collected {resourceId}");
+                GetPlayerResources();
             }
         }
         catch (Nethereum.Contracts.SmartContractCustomErrorRevertException e)
         {
             Debug.Log(e);
-
         }
     }
 
@@ -145,14 +149,10 @@ public class GameManager : MonoBehaviour
                 playerResources[i] = amountOfResource;
                 totalPlayerResources = await CozyTradingPlayer.Read<int>("getPlayerCargoLoad", playerAddress);
             }
-            Debug.Log($"In the cargo: Copper: {playerResources[0]}, Tin: {playerResources[1]}, Iron: {playerResources[2]}");
-            Debug.Log($"Total in Cargo: {totalPlayerResources}");
-
         }
         catch (Nethereum.Contracts.SmartContractCustomErrorRevertException e)
         {
             Debug.Log(e);
-
         }
 
     }
@@ -169,16 +169,15 @@ public class GameManager : MonoBehaviour
                 playerSkills[i].XP = skillInfo[1];
 
             }
-            Debug.Log($"Mining: {playerSkills[0].Level} lvl, {playerSkills[0].XP} xp");
-            Debug.Log($"Smithing: {playerSkills[1].Level} lvl, {playerSkills[1].XP} xp");
-            Debug.Log($"Woodcutting: {playerSkills[2].Level} lvl, {playerSkills[2].XP} xp");
-            Debug.Log($"Crafting: {playerSkills[3].Level} lvl, {playerSkills[3].XP} xp");
+            // Debug.Log($"Mining: {playerSkills[0].Level} lvl, {playerSkills[0].XP} xp");
+            // Debug.Log($"Smithing: {playerSkills[1].Level} lvl, {playerSkills[1].XP} xp");
+            // Debug.Log($"Woodcutting: {playerSkills[2].Level} lvl, {playerSkills[2].XP} xp");
+            // Debug.Log($"Crafting: {playerSkills[3].Level} lvl, {playerSkills[3].XP} xp");
 
         }
         catch (Nethereum.Contracts.SmartContractCustomErrorRevertException e)
         {
             Debug.Log(e);
-
         }
 
     }
@@ -188,12 +187,11 @@ public class GameManager : MonoBehaviour
         try
         {
             playerPebbles = await CozyTradingPlayer.Read<int>("getPlayerPebbles", playerAddress);
-            Debug.Log($"Player pebbles: {playerPebbles}");
+            // Debug.Log($"Player pebbles: {playerPebbles}");
         }
         catch (Nethereum.Contracts.SmartContractCustomErrorRevertException e)
         {
             Debug.Log(e);
-
         }
     }
 
@@ -203,12 +201,11 @@ public class GameManager : MonoBehaviour
         try
         {
             playerCargoSize = await CozyTradingPlayer.Read<int>("getPlayerCargoSize", playerAddress);
-            Debug.Log($"Player cargo size: {playerCargoSize}");
+            // Debug.Log($"Player cargo size: {playerCargoSize}");
         }
         catch (Nethereum.Contracts.SmartContractCustomErrorRevertException e)
         {
             Debug.Log(e);
-
         }
     }
 
@@ -222,8 +219,6 @@ public class GameManager : MonoBehaviour
         int requiredLevel = resourceInfo[1];
         int skillType = resourceInfo[2];
         int xp = resourceInfo[3];
-        Debug.Log($"Resource {resourceId} Info: type {resourceType}, requiredLevel {requiredLevel}, skill {skillType}, xp {xp}");
-        
+        // Debug.Log($"Resource {resourceId} Info: type {resourceType}, requiredLevel {requiredLevel}, skill {skillType}, xp {xp}");
     }
-
-    }
+}

@@ -1,38 +1,47 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using Thirdweb;
 
 public class Ore : MonoBehaviour
 {
-    public bool isCollected;
+    public enum OreType
+    {
+        Copper,
+        Tin,
+        Iron
+    }
+    private Dictionary<OreType, Sprite> oreTypeToSprite;
+    
+    public OreType oreType;
     public int resourceId;
-    Rigidbody2D _rb;
-    GameManager gameManagerScript;
-    // Start is called before the first frame update
+    public bool isCollected = false;
+
+    public Image oreImage;
+    public GameObject canvas;
+    public Sprite collectedOreSprite;
+
     void Start()
     {
-        isCollected = false;
-        _rb = gameObject.GetComponent<Rigidbody2D>();
-
-        gameManagerScript = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameManager>();
+        oreTypeToSprite = new Dictionary<OreType, Sprite>() {
+            {OreType.Copper, Resources.Load<Sprite>("Sprites/ore_copper")},
+            {OreType.Tin, Resources.Load<Sprite>("Sprites/ore_tin")},
+            {OreType.Iron, Resources.Load<Sprite>("Sprites/ore_iron")}
+        };
+        oreImage.sprite = oreTypeToSprite[oreType];
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
-    private void OnMouseDown()
+    public void OnClickCollect()
     {
         Debug.Log($"clicked on ore {resourceId}");
         if (!isCollected)
         {
-        gameManagerScript.Collect(resourceId);
-        // TODO: we have to wait and check if this function executed without errors
-        //       now the resource is set to collected even if it is not collected
-        SetCollected();
+            GameManager.manager.Collect(resourceId);
+            canvas.SetActive(false);
+            // TODO: we have to wait and check if this function executed without errors
+            //       now the resource is set to collected even if it is not collected
+            SetCollected();
         }
         
     }
@@ -41,16 +50,24 @@ public class Ore : MonoBehaviour
     {
         isCollected = true;
         Color oldColor = gameObject.GetComponent<SpriteRenderer>().color;
-        gameObject.GetComponent<SpriteRenderer>().color = new Color(oldColor.r, oldColor.g, oldColor.b, 0.7f);
+        SpriteRenderer spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
+        spriteRenderer.color = new Color(oldColor.r, oldColor.g, oldColor.b, 0.7f);
+        spriteRenderer.sprite = collectedOreSprite;
     }
 
-    // Why collision doesnt work?
-    // We need to come near the ORE to be able to collect it 
-    public void OnCollisionEnter2D(Collision2D collision)
+    public void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log(collision.gameObject.name);
-
+        if (other.gameObject.tag == "Player" && !isCollected)
+        {
+            canvas.SetActive(true);
+        }
     }
 
-
+    public void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.gameObject.tag == "Player")
+        {
+            canvas.SetActive(false);
+        }
+    }
 }
